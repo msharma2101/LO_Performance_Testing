@@ -1,0 +1,37 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1519911978392,11516,ARC Home Page,200,OK,Thread Group 1-1,text,true,,3125913,27271,1,1,2781,0,2267
+1519911996662,894,Login Dropdown Menu,200,OK,Thread Group 1-1,text,true,,1813,399,1,1,894,0,582
+1519912001499,12681,User Login,200,OK,Thread Group 1-1,text,true,,8235687,34420,1,1,5166,0,1186
+1519912018475,2936,User Authourization,200,OK,Thread Group 1-1,text,true,,160384,34106,1,1,1197,0,263
+1519912021412,2762,Token Request Verification,200,OK,Thread Group 1-1,,true,,213,475,1,1,2762,0,2457
+1519912024174,2355,Token Request,200,OK,Thread Group 1-1,text,true,,598,632,1,1,2355,0,1741
+1519912026529,2039,Auth Access Request Verification,200,OK,Thread Group 1-1,,true,,213,610,1,1,2039,0,1743
+1519912028569,1851,Assets Request Verification,200,OK,Thread Group 1-1,,true,,213,618,1,1,1851,0,1544
+1519912030420,307,Country States Request Verification,200,OK,Thread Group 1-1,,true,,213,613,1,1,307,0,0
+1519912030727,2151,Auth Access Request,200,OK,Thread Group 1-1,text,true,,300,724,1,1,2151,0,1538
+1519912032879,2663,Assets Request,200,OK,Thread Group 1-1,text,true,,101317,732,1,1,1740,0,616
+1519912035542,2765,Country States Request,200,OK,Thread Group 1-1,text,true,,34645,727,1,1,2457,0,1536
+1519912038307,7518,ARC Home Page,200,OK,Thread Group 1-1,text,true,,1817423,30943,1,1,1029,0,614
+1519912052579,986,Login Dropdown Menu,200,OK,Thread Group 1-1,text,true,,1812,399,1,1,985,0,677
+1519912057520,9973,User Login,200,OK,Thread Group 1-1,text,true,,8235689,34420,1,1,4917,0,1266
+1519912071787,2582,User Authourization,200,OK,Thread Group 1-1,text,true,,160392,34106,1,1,1179,0,263
+1519912074370,1005,Token Request Verification,200,OK,Thread Group 1-1,,true,,213,475,1,1,1005,0,698
+1519912075375,614,Token Request,200,OK,Thread Group 1-1,text,true,,598,632,1,1,614,0,0
+1519912075989,308,Auth Access Request Verification,200,OK,Thread Group 1-1,,true,,213,610,1,1,308,0,0
+1519912076297,306,Assets Request Verification,200,OK,Thread Group 1-1,,true,,213,618,1,1,306,0,0
+1519912076604,1843,Country States Request Verification,200,OK,Thread Group 1-1,,true,,213,613,1,1,1843,0,1535
+1519912078447,623,Auth Access Request,200,OK,Thread Group 1-1,text,true,,300,724,1,1,623,0,0
+1519912079070,3270,Assets Request,200,OK,Thread Group 1-1,text,true,,101317,732,1,1,2653,0,1733
+1519912082341,2762,Country States Request,200,OK,Thread Group 1-1,text,true,,34645,727,1,1,2460,0,1533
+1519912085104,7788,ARC Home Page,200,OK,Thread Group 1-1,text,true,,2191273,29241,1,1,899,0,467
+1519912099648,1020,Login Dropdown Menu,200,OK,Thread Group 1-1,text,true,,1814,399,1,1,1020,0,711
+1519912104608,10057,User Login,200,OK,Thread Group 1-1,text,true,,8235687,34420,1,1,4864,0,1281
+1519912118960,3212,User Authourization,200,OK,Thread Group 1-1,text,true,,160392,34106,1,1,1256,0,290
+1519912122173,2148,Token Request Verification,200,OK,Thread Group 1-1,,true,,213,475,1,1,2148,0,1842
+1519912124322,2149,Token Request,200,OK,Thread Group 1-1,text,true,,598,632,1,1,2149,0,1535
+1519912126472,1843,Auth Access Request Verification,200,OK,Thread Group 1-1,,true,,213,610,1,1,1843,0,1536
+1519912128315,282,Assets Request Verification,200,OK,Thread Group 1-1,,true,,213,618,1,1,282,0,0
+1519912128597,1971,Country States Request Verification,200,OK,Thread Group 1-1,,true,,213,613,1,1,1971,0,1665
+1519912130569,614,Auth Access Request,200,OK,Thread Group 1-1,text,true,,300,724,1,1,614,0,0
+1519912131183,3287,Assets Request,200,OK,Thread Group 1-1,text,true,,101317,732,1,1,2656,0,1740
+1519912134470,2960,Country States Request,200,OK,Thread Group 1-1,text,true,,34645,727,1,1,2652,0,1731
