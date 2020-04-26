@@ -98,7 +98,7 @@
               </outputDirectory>-->
               <resources>          
                 <resource>
-                  <directory>${project.basedir}\src\test\jmeter\File\</directory>
+                  <directory>${project.basedir}/src/test/jmeter/File/</directory>
                   <!-- <directory>D:\Jenkins\workspace\TestPerformance\src\test\jmeter\File 
                     </directory>-->
                   <filtering>true</filtering>
