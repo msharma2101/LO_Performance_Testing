@@ -24,12 +24,12 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="BASE_URL_1" elementType="Argument">
             <stringProp name="Argument.name">BASE_URL_1</stringProp>
-            <stringProp name="Argument.value">leedonline-qas.usgbc.org</stringProp>
+            <stringProp name="Argument.value">leedonline-stg.usgbc.org</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="BASE_URL_2" elementType="Argument">
             <stringProp name="Argument.name">BASE_URL_2</stringProp>
-            <stringProp name="Argument.value">leedonline-api-qas.usgbc.org</stringProp>
+            <stringProp name="Argument.value">leedonline-api-stg.usgbc.org</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="CardNumber" elementType="Argument">
@@ -215,7 +215,7 @@
                 <elementProp name="password" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">password</stringProp>
-                  <stringProp name="Argument.value">${Password}</stringProp>
+                  <stringProp name="Argument.value">initpass</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -243,7 +243,7 @@
                 <elementProp name="username" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">username</stringProp>
-                  <stringProp name="Argument.value">${Email}</stringProp>
+                  <stringProp name="Argument.value">newserver2@gmail.com}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -385,7 +385,7 @@ fw.close();
 </stringProp>
             </BeanShellPostProcessor>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate User name ${Username} on Projects page" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate User name ${Username} on Projects page" enabled="false">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-605278384">${Username}</stringProp>
               </collectionProp>
@@ -3017,7 +3017,7 @@ fileWriter.close();</stringProp>
           <stringProp name="Assertion.scope">all</stringProp>
         </DurationAssertion>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">C:\Users\Megha\Desktop\Jmeter\LEEDOnline_Performance\csv\DataDriven.csv</stringProp>
