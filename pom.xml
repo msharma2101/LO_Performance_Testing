@@ -39,8 +39,8 @@
             <properties>
                 <performancetest.webservice.host>tomcat7-example-webapp.mlex.cloudbees.net</performancetest.webservice.host>
                 <performancetest.webservice.port>80</performancetest.webservice.port>
-                <performancetest.threadCount>1</performancetest.threadCount>
-                <performancetest.loopCount>1</performancetest.loopCount>
+                <performancetest.threadCount>5</performancetest.threadCount>
+                <performancetest.loopCount>5</performancetest.loopCount>
             </properties>
         </profile>
     </profiles>
@@ -55,7 +55,7 @@
                  <filesets>
                 <fileset>
                         <!-- <directory>/var/lib/jenkins/workspace/TestPerformance/Reportfile</directory> -->
-                        <directory>${project.basedir}\Report\</directory>
+                        <directory>/var/lib/jenkins/workspace/LeedOnline_performance_Testing/Reportfile/</directory>
                         <!-- <directory>/var/lib/jenkins/workspace/ARCPerformance/Report</directory> -->
                         <includes>
                             <include>**/*</include>
@@ -65,7 +65,7 @@
                     </fileset>
                     <fileset>
                         <!-- <directory>/var/lib/jenkins/workspace/TestPerformance/Reportfile</directory> -->
-                        <directory>${project.basedir}\Reportfile\</directory>
+                        <directory>/var/lib/jenkins/workspace/LeedOnline_performance_Testing/Report/</directory>
                         <!-- <directory>/var/lib/jenkins/workspace/ARCPerformance/Report</directory> -->
                         <includes>
                             <include>**/*</include>
@@ -93,12 +93,12 @@
             </goals>
             <configuration>
             <overwrite>false</overwrite>
-              <outputDirectory>${project.basedir}\Reportfile</outputDirectory>
+              <outputDirectory>/var/lib/jenkins/workspace/LeedOnline_performance_Testing/Reportfile/</outputDirectory>
               <!-- <outputDirectory>C:\apache-jmeter-4.0\apache-jmeter-4.0\bin\examples\csv 
               </outputDirectory>-->
               <resources>          
                 <resource>
-                  <directory>${project.basedir}/src/test/jmeter/File/</directory>
+                  <directory>/var/lib/jenkins/workspace/AutomationTesting/SOAPPerformance/src/test/jmeter/File</directory>
                   <!-- <directory>D:\Jenkins\workspace\TestPerformance\src\test\jmeter\File 
                     </directory>-->
                   <filtering>true</filtering>
