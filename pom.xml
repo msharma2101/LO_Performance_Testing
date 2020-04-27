@@ -214,9 +214,9 @@
                     
                    <!--  <source>D:\Jenkins\workspace\TestPerformance\target\jmeter\results/ArcPerformanceBuildingOther.jtl
                     </source> -->
-                  <!-- <source>${project.build.directory}\jmeter\results\LeedOnline_performance_Testing.jtl
+                  <!-- <source>${project.build.directory}\jmeter\results\LeedOnline_performance_Testing.jtl    LeedOnline_performance_Testing
                   </source>  -->
-                  <source>${project.build.directory}\jtl\LEEDOnline_check_payment_performance_testing.jtl
+                  <source>${project.build.directory}/jmeter/results/LeedOnline_performance_Testing.jtl 
                   </source> 
                           
               <sourceDirFailed>true</sourceDirFailed>

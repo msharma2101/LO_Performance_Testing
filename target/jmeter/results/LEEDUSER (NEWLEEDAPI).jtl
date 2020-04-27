@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="254780" it="0" lt="0" ct="254778" ts="1587956831978" s="false" lb="Create Project" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection timed out (Connection timed out)" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="2324" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Extractor</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Content is not allowed in prolog.
+See log file for further details.</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /200/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Text Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&lt;EProjectId&gt;/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /200/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="1806" it="0" lt="1806" ct="54" ts="1587957086784" s="true" lb="Project Payment" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1303" sby="2902" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Text Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1368" it="0" lt="1367" ct="0" ts="1587957088593" s="true" lb="GetProjectCertificationDetails" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1004" sby="997" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1735" it="0" lt="1735" ct="2" ts="1587957089962" s="false" lb="GetProjectTimelineOptions" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1038" sby="1029" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&lt;RvwDescription&gt;/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1112" it="0" lt="1112" ct="0" ts="1587957091700" s="true" lb="UpdateProject" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="970" sby="1588" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="5583" it="0" lt="5479" ct="1" ts="1587957092814" s="true" lb="GetProjectListBySel" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="3378216" sby="1021" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1369" it="0" lt="1369" ct="1" ts="1587957098405" s="true" lb="GetProjectAddresses" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="949" sby="1010" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1444" it="0" lt="1444" ct="0" ts="1587957099776" s="true" lb="GetProjectDetails" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="11438" sby="1079" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1163" it="0" lt="1163" ct="1" ts="1587957101222" s="true" lb="AddProjectTeamMember" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1088" sby="1182" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1221" it="0" lt="1221" ct="0" ts="1587957102387" s="true" lb="GetProjectTeamInfo" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="3810" sby="1010" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1152" it="0" lt="1152" ct="2" ts="1587957103610" s="true" lb="RemoveProjectTeamMember" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1094" sby="1186" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1415" it="0" lt="1415" ct="0" ts="1587957104764" s="true" lb="ChangeProjectTeam " rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1101" sby="1209" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1189" it="0" lt="1189" ct="1" ts="1587957106181" s="true" lb="ChangeAdmin" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="906" sby="1173" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="5484" it="0" lt="5483" ct="0" ts="1587957107372" s="true" lb="GetProjectTimelineSummary" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="13493" sby="1031" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8341" it="0" lt="8341" ct="1" ts="1587957112857" s="true" lb="ChangeProjectTimeline" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="981" sby="1042" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1247" it="0" lt="1246" ct="17" ts="1587957121201" s="true" lb="GetUserDetails" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="3577" sby="1124" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1272" it="0" lt="1271" ct="0" ts="1587957122449" s="true" lb="GetCampusList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="10353" sby="995" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1327" it="0" lt="1326" ct="2" ts="1587957123723" s="true" lb="GetCampusProjectList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="5883" sby="1070" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1349" it="0" lt="1348" ct="0" ts="1587957125052" s="true" lb="GetMasterList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="18011" sby="1036" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2813" it="0" lt="2813" ct="3" ts="1587957126402" s="true" lb="CreateCir" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="669" sby="1274" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1997" it="0" lt="1997" ct="3" ts="1587957129287" s="true" lb="GetCirList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="2451" sby="1040" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8554" it="0" lt="8554" ct="0" ts="1587957131285" s="true" lb="GetProjectClarificationList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1830" sby="1032" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1361" it="0" lt="1361" ct="3" ts="1587957139840" s="true" lb="GetClarificationDetail" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1809" sby="1073" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="10620" it="0" lt="10620" ct="0" ts="1587957141203" s="true" lb="ReplyProjectClarification" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="739" sby="1149" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2535" it="0" lt="2535" ct="35" ts="1587957151826" s="false" lb="GetProjectDocumentList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="675" sby="1011" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /ApplicationId/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1307" it="0" lt="1306" ct="3" ts="1587957154362" s="true" lb="GetBlockList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="1736" sby="1016" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1260" it="0" lt="1260" ct="0" ts="1587957155670" s="true" lb="GetPortfolioList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="6739" sby="1024" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1284" it="0" lt="1283" ct="2" ts="1587957156932" s="true" lb="GetPrototypeList" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="19959" sby="1071" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1389" it="0" lt="1389" ct="0" ts="1587957158216" s="true" lb="GetProjectsForPrototypeOrBlock" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="2922" sby="1121" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1164" it="0" lt="1164" ct="3" ts="1587957159606" s="true" lb="GetUserRole" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="814" sby="942" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="297" it="0" lt="297" ct="0" ts="1587957160771" s="true" lb="GetAliasDetails" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="4142" sby="1032" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1198" it="0" lt="1198" ct="0" ts="1587957161069" s="true" lb="GetUserBpNumber" rc="200" rm="OK" tn="LEEDUSER (NEWLEEDAPI) 1-1" dt="text" by="730" sby="986" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>
