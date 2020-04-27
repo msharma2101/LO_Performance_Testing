@@ -3000,7 +3000,7 @@ fileWriter.close();</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/var/lib/jenkins/workspace/LeedOnline_performance_Testing/Report/Summary_report.csv</stringProp>
+          <stringProp name="filename">/var/lib/jenkins/workspace/LeedOnline_performance_Testing/Reportfile/Summary_report.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
