@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="8179" it="0" lt="8179" ct="2605" ts="1522057550664" s="false" lb="Login Module" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1066" sby="477" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>The operation lasted too long: It took 8,179 milliseconds, but should not have lasted longer than 7,000 milliseconds.</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="4861" it="0" lt="4861" ct="1084" ts="1522057558953" s="true" lb="Project Registration" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2214" sby="65942" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8656" it="0" lt="8656" ct="770" ts="1522057563946" s="false" lb="Registration Payment" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="551" sby="1945" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>The operation lasted too long: It took 8,656 milliseconds, but should not have lasted longer than 7,000 milliseconds.</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="1065" it="0" lt="1065" ct="599" ts="1522057572718" s="true" lb="Create Energy meter" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="674" sby="872" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1714" it="0" lt="1714" ct="0" ts="1522057573854" s="true" lb="Input Energy Reading" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="1599" sby="926" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1172" it="0" lt="1172" ct="759" ts="1522057575631" s="true" lb="Create Water Meter" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="688" sby="870" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1633" it="0" lt="1633" ct="0" ts="1522057576905" s="true" lb="Input Water Reading" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="1610" sby="924" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1098" it="0" lt="1098" ct="792" ts="1522057578669" s="true" lb="Create Waste Meter" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="265" sby="775" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1888" it="0" lt="1888" ct="0" ts="1522057579824" s="true" lb="Input Waste Reading" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="892" sby="947" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1766" it="0" lt="1766" ct="1395" ts="1522057581791" s="true" lb="Manage Project (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2627" sby="742" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2347" it="0" lt="2347" ct="0" ts="1522057583676" s="true" lb="Edit Opreating Hours" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2628" sby="837" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="4412" it="0" lt="4412" ct="722" ts="1522057586115" s="true" lb="Edit Occupancy" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2628" sby="832" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1794" it="0" lt="1794" ct="666" ts="1522057590672" s="true" lb="Team (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1070" sby="745" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1042" it="0" lt="1042" ct="0" ts="1522057592549" s="true" lb="Add Team Member" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="233" sby="849" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2210" it="0" lt="2210" ct="1360" ts="1522057593640" s="true" lb="Edit Team Member Role" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="245" sby="855" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1147" it="0" lt="1147" ct="736" ts="1522057595929" s="true" lb="Install Apps (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="464" sby="744" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="423" it="0" lt="423" ct="0" ts="1522057597163" s="true" lb="Install Dropbox" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="403" sby="808" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="420" it="0" lt="420" ct="0" ts="1522057597676" s="true" lb="Install One Drive" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="416" sby="808" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1153" it="0" lt="1153" ct="848" ts="1522057598176" s="true" lb="Install Google Drive" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="412" sby="808" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1827" it="0" lt="1826" ct="0" ts="1522057599437" s="true" lb="Credit Action (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13062" sby="754" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1099" it="0" lt="1098" ct="684" ts="1522057601308" s="true" lb="Uploading the Excel Template to Create Energy Meter" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="396" sby="1176" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="290" it="0" lt="290" ct="0" ts="1522057602524" s="true" lb="Creating the Log for Uploading the Create Energy Meter File" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1002" sby="803" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="345" it="0" lt="345" ct="0" ts="1522057602882" s="true" lb="Exporting the Data for Energy Meter" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="6852" sby="764" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1092" it="0" lt="1091" ct="683" ts="1522057603360" s="true" lb="Review (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="214" sby="768" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="315" it="0" lt="313" ct="0" ts="1522057604544" s="true" lb="Send Data Snapshot for Performance Score" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="257" sby="855" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2554" it="0" lt="2553" ct="0" ts="1522057604968" s="true" lb="Submit Review (Performance Score Verification)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="543" sby="6272" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="7757" it="0" lt="7757" ct="2558" ts="1522057781234" s="false" lb="Login Module" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1066" sby="477" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>The operation lasted too long: It took 7,757 milliseconds, but should not have lasted longer than 7,000 milliseconds.</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="4482" it="0" lt="4482" ct="624" ts="1522057789100" s="true" lb="Project Registration" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2214" sby="65846" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8414" it="0" lt="8414" ct="843" ts="1522057793768" s="false" lb="Registration Payment" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="551" sby="1945" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>The operation lasted too long: It took 8,414 milliseconds, but should not have lasted longer than 7,000 milliseconds.</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="1135" it="0" lt="1135" ct="669" ts="1522057802334" s="true" lb="Create Energy meter" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="674" sby="872" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1559" it="0" lt="1559" ct="0" ts="1522057803590" s="true" lb="Input Energy Reading" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="1599" sby="926" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1184" it="0" lt="1184" ct="862" ts="1522057805249" s="true" lb="Create Water Meter" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="688" sby="870" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1610" it="0" lt="1610" ct="0" ts="1522057806511" s="true" lb="Input Water Reading" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="1610" sby="924" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1978" it="0" lt="1978" ct="1568" ts="1522057808194" s="true" lb="Create Waste Meter" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="265" sby="775" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2974" it="0" lt="2974" ct="1541" ts="1522057810267" s="true" lb="Input Waste Reading" rc="201" rm="Created" tn="Thread Group 1-1" dt="text" by="892" sby="947" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1761" it="0" lt="1761" ct="1328" ts="1522057813328" s="true" lb="Manage Project (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2627" sby="742" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2354" it="0" lt="2354" ct="0" ts="1522057815194" s="true" lb="Edit Opreating Hours" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2628" sby="837" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="3211" it="0" lt="3211" ct="753" ts="1522057817617" s="true" lb="Edit Occupancy" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2628" sby="832" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2783" it="0" lt="2783" ct="746" ts="1522057820904" s="true" lb="Team (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1070" sby="745" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1581" it="0" lt="1581" ct="766" ts="1522057823744" s="true" lb="Add Team Member" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="233" sby="849" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1099" it="0" lt="1099" ct="0" ts="1522057825428" s="true" lb="Edit Team Member Role" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="245" sby="855" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1771" it="0" lt="1770" ct="1383" ts="1522057826642" s="true" lb="Install Apps (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="464" sby="744" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="288" it="0" lt="288" ct="0" ts="1522057828522" s="true" lb="Install Dropbox" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="403" sby="808" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="932" it="0" lt="932" ct="622" ts="1522057828905" s="true" lb="Install One Drive" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="416" sby="808" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="280" it="0" lt="280" ct="0" ts="1522057829932" s="true" lb="Install Google Drive" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="412" sby="808" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1932" it="0" lt="1931" ct="0" ts="1522057830254" s="true" lb="Credit Action (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13062" sby="754" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2110" it="0" lt="2110" ct="1497" ts="1522057832225" s="true" lb="Uploading the Excel Template to Create Energy Meter" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="396" sby="1176" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1790" it="0" lt="1790" ct="1384" ts="1522057834392" s="true" lb="Creating the Log for Uploading the Create Energy Meter File" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1002" sby="803" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="491" it="0" lt="491" ct="0" ts="1522057836306" s="true" lb="Exporting the Data for Energy Meter" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="6852" sby="764" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1978" it="0" lt="1978" ct="1569" ts="1522057836865" s="true" lb="Review (Click)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="214" sby="768" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1153" it="0" lt="1149" ct="738" ts="1522057838926" s="true" lb="Send Data Snapshot for Performance Score" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="257" sby="855" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2517" it="0" lt="2517" ct="0" ts="1522057840222" s="true" lb="Submit Review (Performance Score Verification)" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="543" sby="6272" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Duration Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+1522062601065,8770,Login Module,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 8,770 milliseconds, but should not have lasted longer than 7,000 milliseconds.",1066,477,1,1,8770,0,3241
+1522062609964,5368,Project Registration,200,OK,Thread Group 1-1,text,true,,2214,65910,1,1,5368,0,1473
+1522062615464,9284,Registration Payment,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 9,284 milliseconds, but should not have lasted longer than 7,000 milliseconds.",551,1945,1,1,9284,0,1333
+1522062624850,1203,Create Energy meter,201,Created,Thread Group 1-1,text,true,,674,872,1,1,1203,0,723
+1522062626104,1943,Input Energy Reading,201,Created,Thread Group 1-1,text,true,,1599,926,1,1,1943,0,0
+1522062628102,947,Create Water Meter,201,Created,Thread Group 1-1,text,true,,688,870,1,1,947,0,572
+1522062629109,8645,Input Water Reading,201,Created,Thread Group 1-1,text,false,"The operation lasted too long: It took 8,645 milliseconds, but should not have lasted longer than 7,000 milliseconds.",1610,924,1,1,8644,0,0
+1522062637860,1224,Create Waste Meter,200,OK,Thread Group 1-1,text,true,,265,775,1,1,1224,0,818
+1522062639131,1898,Input Waste Reading,201,Created,Thread Group 1-1,text,true,,892,947,1,1,1898,0,0
+1522062641107,1665,Manage Project (Click),200,OK,Thread Group 1-1,text,true,,2627,742,1,1,1665,0,1253
+1522062642830,2398,Edit Opreating Hours,200,OK,Thread Group 1-1,text,true,,2628,837,1,1,2398,0,0
+1522062645283,4249,Edit Occupancy,200,OK,Thread Group 1-1,text,true,,2628,832,1,1,4249,0,1342
+1522062649598,2390,Team (Click),200,OK,Thread Group 1-1,text,true,,1070,745,1,1,2390,0,753
+1522062652050,2601,Add Team Member,200,OK,Thread Group 1-1,text,true,,233,849,1,1,2601,0,762
+1522062654714,1780,Edit Team Member Role,200,OK,Thread Group 1-1,text,true,,245,855,1,1,1780,0,757
+1522062656542,365,Install Apps (Click),200,OK,Thread Group 1-1,text,true,,464,744,1,1,365,0,0
+1522062656944,1190,Install Dropbox,200,OK,Thread Group 1-1,text,true,,403,808,1,1,1190,0,779
+1522062658180,360,Install One Drive,200,OK,Thread Group 1-1,text,true,,416,808,1,1,360,0,0
+1522062658591,359,Install Google Drive,200,OK,Thread Group 1-1,text,true,,412,808,1,1,359,0,0
+1522062659023,2798,Credit Action (Click),200,OK,Thread Group 1-1,text,true,,13062,754,1,1,2796,0,748
+1522062661853,1601,Uploading the Excel Template to Create Energy Meter,200,OK,Thread Group 1-1,text,true,,396,1176,1,1,1601,0,886
+1522062663499,265,Creating the Log for Uploading the Create Energy Meter File,200,OK,Thread Group 1-1,text,true,,1002,803,1,1,265,0,0
+1522062663819,336,Exporting the Data for Energy Meter,200,OK,Thread Group 1-1,text,true,,6851,764,1,1,336,0,0
+1522062664194,1110,Review (Click),200,OK,Thread Group 1-1,text,true,,214,768,1,1,1110,0,695
+1522062665337,423,Send Data Snapshot for Performance Score,200,OK,Thread Group 1-1,text,true,,257,855,1,1,421,0,0
+1522062665846,2524,Submit Review (Performance Score Verification),200,OK,Thread Group 1-1,text,true,,543,6272,1,1,2524,0,0
+1522063993999,8086,Login Module,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 8,086 milliseconds, but should not have lasted longer than 7,000 milliseconds.",1066,477,1,1,8086,0,2662
+1522064002186,4724,Project Registration,200,OK,Thread Group 1-1,text,true,,2214,66134,1,1,4724,0,780
+1522064007127,9153,Registration Payment,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 9,153 milliseconds, but should not have lasted longer than 7,000 milliseconds.",551,1945,1,1,9153,0,1402
+1522064016405,1302,Create Energy meter,201,Created,Thread Group 1-1,text,true,,674,872,1,1,1302,0,692
+1522064017825,1727,Input Energy Reading,201,Created,Thread Group 1-1,text,true,,1599,926,1,1,1727,0,0
+1522064019652,1743,Create Water Meter,201,Created,Thread Group 1-1,text,true,,688,870,1,1,1743,0,1331
+1522064021501,1942,Input Water Reading,201,Created,Thread Group 1-1,text,true,,1610,924,1,1,1942,0,0
+1522064023554,1116,Create Waste Meter,200,OK,Thread Group 1-1,text,true,,265,775,1,1,1115,0,715
+1522064024772,1537,Input Waste Reading,201,Created,Thread Group 1-1,text,true,,892,947,1,1,1537,0,0
+1522064026411,1334,Manage Project (Click),200,OK,Thread Group 1-1,text,true,,2627,742,1,1,1334,0,723
+1522064027834,2393,Edit Opreating Hours,200,OK,Thread Group 1-1,text,true,,2628,837,1,1,2393,0,0
+1522064030318,3162,Edit Occupancy,200,OK,Thread Group 1-1,text,true,,2628,832,1,1,3162,0,705
+1522064033567,4210,Team (Click),200,OK,Thread Group 1-1,text,true,,1070,745,1,1,4210,0,2373
+1522064037852,2389,Add Team Member,200,OK,Thread Group 1-1,text,true,,233,849,1,1,2389,0,1565
+1522064040354,1730,Edit Team Member Role,200,OK,Thread Group 1-1,text,true,,245,855,1,1,1729,0,703
+1522064042161,329,Install Apps (Click),200,OK,Thread Group 1-1,text,true,,464,744,1,1,329,0,0
+1522064042582,1853,Install Dropbox,200,OK,Thread Group 1-1,text,true,,403,808,1,1,1853,0,1443
+1522064044487,462,Install One Drive,200,OK,Thread Group 1-1,text,true,,416,808,1,1,462,0,0
+1522064045053,1533,Install Google Drive,200,OK,Thread Group 1-1,text,true,,412,808,1,1,1533,0,925
+1522064046659,1979,Credit Action (Click),200,OK,Thread Group 1-1,text,true,,13062,754,1,1,1977,0,0
+1522064048731,2981,Uploading the Excel Template to Create Energy Meter,200,OK,Thread Group 1-1,text,true,,396,1176,1,1,2981,0,2565
+1522064051819,1730,Creating the Log for Uploading the Create Energy Meter File,200,OK,Thread Group 1-1,text,true,,1002,803,1,1,1730,0,1322
+1522064053633,375,Exporting the Data for Energy Meter,200,OK,Thread Group 1-1,text,true,,6851,764,1,1,375,0,0
+1522064054117,1069,Review (Click),200,OK,Thread Group 1-1,text,true,,214,768,1,1,1069,0,662
+1522064055255,352,Send Data Snapshot for Performance Score,200,OK,Thread Group 1-1,text,true,,276,855,1,1,349,0,0
+1522064055716,2952,Submit Review (Performance Score Verification),200,OK,Thread Group 1-1,text,true,,543,6272,1,1,2952,0,0
+1522069441220,8455,Login Module,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 8,455 milliseconds, but should not have lasted longer than 7,000 milliseconds.",1066,477,1,1,8455,0,3346
+1522069449774,43075,Project Registration,500,Internal Server Error,Thread Group 1-1,text,false,Test failed: code expected to match /200/,223,66070,1,1,43075,0,1603
+1522069493027,1871,Registration Payment,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,296,1946,1,1,1871,0,1563
+1522069495065,2189,Create Energy meter,404,Not Found,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[201]]]
+
+/",288,873,1,1,2189,0,1573
+1522069497330,2094,Input Energy Reading,404,Not Found,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[201]]]
+
+/",313,932,1,1,2093,0,1772
+1522069499525,2233,Create Water Meter,404,Not Found,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[201]]]
+
+/",288,871,1,1,2232,0,1620
+1522069719241,2470,Input Water Reading,404,Not Found,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[201]]]
+
+/",313,930,1,1,2470,0,1855
+1522069721795,2062,Create Waste Meter,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,287,776,1,1,2062,0,1759
+1522069723976,2253,Input Waste Reading,404,Not Found,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[201]]]
+
+/",287,948,1,1,2253,0,1728
+1522069726343,2432,Manage Project (Click),404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,280,743,1,1,2432,0,1824
+1522069728876,2153,Edit Opreating Hours,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,280,838,1,1,2153,0,1540
+1522069731132,2253,Edit Occupancy,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,280,833,1,1,2253,0,1638
+1522069733467,2374,Team (Click),404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,287,746,1,1,2374,0,1761
+1522069735913,2387,Add Team Member,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,287,850,1,1,2387,0,1772
+1522069738392,1852,Edit Team Member Role,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,294,856,1,1,1852,0,1435
+1522069740339,419,Install Apps (Click),404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,286,745,1,1,419,0,0
+1522069740841,2372,Install Dropbox,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,286,809,1,1,2372,0,1760
+1522069743296,2375,Install One Drive,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,286,809,1,1,2375,0,1761
+1522069745789,2238,Install Google Drive,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,286,809,1,1,2237,0,1624
+1522069748112,2065,Credit Action (Click),404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,289,755,1,1,2065,0,1763
+1522069750259,2376,Uploading the Excel Template to Create Energy Meter,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,302,1177,1,1,2376,0,1763
+1522069752730,2341,Creating the Log for Uploading the Create Energy Meter File,500,Internal Server Error,Thread Group 1-1,text,false,Test failed: code expected to match /200/,223,802,1,1,2341,0,1646
+1522069755144,1903,Exporting the Data for Energy Meter,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,288,765,1,1,1903,0,1586
+1522069757144,406,Review (Click),404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,288,769,1,1,406,0,0
+1522069757625,2386,Send Data Snapshot for Performance Score,404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,288,856,1,1,2386,0,1771
+1522069760088,1994,Submit Review (Performance Score Verification),404,Not Found,Thread Group 1-1,text,false,Test failed: code expected to match /200/,288,6273,1,1,1993,0,1668
+1522070907107,8504,Login Module,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 8,504 milliseconds, but should not have lasted longer than 7,000 milliseconds.",1066,477,1,1,8504,0,3292
+1522070915727,10614,Project Registration,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 10,614 milliseconds, but should not have lasted longer than 7,000 milliseconds.",2214,65974,1,1,10614,0,1600
+1522070926483,9483,Registration Payment,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 9,483 milliseconds, but should not have lasted longer than 7,000 milliseconds.",551,1945,1,1,9483,0,1596
+1522070936031,2739,Create Energy meter,201,Created,Thread Group 1-1,text,true,,674,872,1,1,2739,0,2081
+1522070938866,3437,Input Energy Reading,201,Created,Thread Group 1-1,text,true,,1599,926,1,1,3437,0,1500
+1522070942387,2179,Create Water Meter,201,Created,Thread Group 1-1,text,true,,688,870,1,1,2178,0,1563
+1522070944658,3592,Input Water Reading,201,Created,Thread Group 1-1,text,true,,1610,924,1,1,3592,0,1751
+1522070948314,2394,Create Waste Meter,200,OK,Thread Group 1-1,text,true,,265,775,1,1,2394,0,1781
+1522070950777,3617,Input Waste Reading,201,Created,Thread Group 1-1,text,true,,892,947,1,1,3617,0,2082
+1522070954475,2376,Manage Project (Click),200,OK,Thread Group 1-1,text,true,,2627,742,1,1,2375,0,1762
+1522070956908,4552,Edit Opreating Hours,200,OK,Thread Group 1-1,text,true,,2628,837,1,1,4552,0,1787
+1522070961533,4536,Edit Occupancy,200,OK,Thread Group 1-1,text,true,,2628,832,1,1,4536,0,1771
+1522070966131,4136,Team (Click),200,OK,Thread Group 1-1,text,true,,1070,745,1,1,4136,0,1985
+1522070970337,2898,Add Team Member,200,OK,Thread Group 1-1,text,true,,233,849,1,1,2898,0,1773
+1522070973296,2912,Edit Team Member Role,200,OK,Thread Group 1-1,text,true,,245,855,1,1,2912,0,1682
+1522070976269,1985,Install Apps (Click),200,OK,Thread Group 1-1,text,true,,464,744,1,1,1985,0,1370
+1522070978314,2397,Install Dropbox,200,OK,Thread Group 1-1,text,true,,403,808,1,1,2397,0,1783
+1522070980757,2412,Install One Drive,200,OK,Thread Group 1-1,text,true,,416,808,1,1,2411,0,1798
+1522070983226,2092,Install Google Drive,200,OK,Thread Group 1-1,text,true,,412,808,1,1,2092,0,1580
+1522070985385,3313,Credit Action (Click),200,OK,Thread Group 1-1,text,true,,13062,754,1,1,3006,0,1470
+1522070988755,2255,Uploading the Excel Template to Create Energy Meter,200,OK,Thread Group 1-1,text,true,,396,1176,1,1,2255,0,1684
+1522070991074,2233,Creating the Log for Uploading the Create Energy Meter File,200,OK,Thread Group 1-1,text,true,,1002,803,1,1,2233,0,1618
+1522070993366,2706,Exporting the Data for Energy Meter,200,OK,Thread Group 1-1,text,true,,6852,764,1,1,2706,0,2091
+1522070996136,2343,Review (Click),200,OK,Thread Group 1-1,text,true,,214,768,1,1,2343,0,1991
+1522070998520,2680,Send Data Snapshot for Performance Score,200,OK,Thread Group 1-1,text,true,,257,855,1,1,2677,0,2057
+1522071001298,4551,Submit Review (Performance Score Verification),200,OK,Thread Group 1-1,text,true,,543,6272,1,1,4551,0,1677
