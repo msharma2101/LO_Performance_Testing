@@ -125,3 +125,36 @@ Caused by: java.lang.ClassNotFoundException: org.apache.commons.httpclient.metho
 2020-04-27 19:35:16,610 INFO o.a.j.s.FileServer: Set new base='C:\Users\Megha\Documents\git_automation\LEEDOnline_Performance\src\test\jmeter'
 2020-04-27 19:35:16,610 INFO o.a.j.s.SaveService: Loading file: C:\Users\Megha\Documents\git_automation\LEEDOnline_Performance\src\test\jmeter\LeedOnline_Performance_Testing.jmx
 2020-04-27 19:35:16,875 INFO o.a.j.s.FileServer: Set new base='C:\Users\Megha\Documents\git_automation\LEEDOnline_Performance\src\test\jmeter'
+2020-04-27 20:02:08,410 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-04-27 20:02:08,412 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-04-27 20:02:08,412 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-04-27 20:02:08,431 INFO o.a.j.r.ResultCollector: Folder at C:\var\lib\jenkins\workspace\LeedOnline_Performance_Testing\Reportfile was created
+2020-04-27 20:02:08,444 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-04-27 20:02:09,006 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2020-04-27 20:02:09,007 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group .
+2020-04-27 20:02:09,007 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-04-27 20:02:09,008 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 perThread=1000.0 delayedStart=false
+2020-04-27 20:02:09,036 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-04-27 20:02:09,036 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-04-27 20:02:09,063 INFO o.a.j.t.JMeterThread: Thread started: Thread Group  1-1
+2020-04-27 20:02:09,079 INFO o.a.j.s.FileServer: Stored: \var\lib\jenkins\workspace\LEEDOnline_Performance_Testing\DataDriven.csv
+2020-04-27 20:02:09,080 ERROR o.a.j.t.JMeterThread: Test failed!
+java.lang.IllegalArgumentException: Could not read file header line for file \var\lib\jenkins\workspace\LEEDOnline_Performance_Testing\DataDriven.csv
+	at org.apache.jmeter.services.FileServer.reserveFile(FileServer.java:289) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:189) ~[ApacheJMeter_components.jar:3.3 r1808647]
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:393) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:385) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:158) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:87) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:253) [ApacheJMeter_core.jar:3.3 r1808647]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+Caused by: java.lang.IllegalArgumentException: File DataDriven.csv must exist and be readable
+	at org.apache.jmeter.services.FileServer.createBufferedReader(FileServer.java:430) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:346) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:330) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	at org.apache.jmeter.services.FileServer.reserveFile(FileServer.java:278) ~[ApacheJMeter_core.jar:3.3 r1808647]
+	... 8 more
+2020-04-27 20:02:09,082 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group  1-1
+2020-04-27 20:02:09,082 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-04-27 20:02:09,085 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
