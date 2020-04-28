@@ -152,6 +152,7 @@
                         <webservice.responseTimeout>${performancetest.responseTimeout}</webservice.responseTimeout>
                         <threadCount>${performancetest.threadCount}</threadCount>
                         <loopCount>${performancetest.loopCount}</loopCount>
+                        <rampUp>${performancetest.rampUp}</rampUp>
                     </propertiesUser>
                     <propertiesJMeter>
                         <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
