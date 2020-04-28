@@ -54,17 +54,17 @@
           </elementProp>
           <elementProp name="THREAD_COUNT" elementType="Argument">
             <stringProp name="Argument.name">THREAD_COUNT</stringProp>
-            <stringProp name="Argument.value">${__P(threadCount,1)}	</stringProp>
+            <stringProp name="Argument.value">${__P(threadCount, 10)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LOOP_COUNT" elementType="Argument">
             <stringProp name="Argument.name">LOOP_COUNT</stringProp>
-            <stringProp name="Argument.value">${__P(loopCount,1)}</stringProp>
+            <stringProp name="Argument.value">${__P(loopCount, 1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="RAMP_UP" elementType="Argument">
             <stringProp name="Argument.name">RAMP_UP</stringProp>
-            <stringProp name="Argument.value">${__P(rampUp,1)}</stringProp>
+            <stringProp name="Argument.value">${__P(rampUp, 20)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -169,7 +169,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
