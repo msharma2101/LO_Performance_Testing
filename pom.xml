@@ -285,7 +285,7 @@
                 </configuration>
             </plugin>
 
-            <plugin>
+            <!-- <plugin>
                 <groupId>de.codecentric</groupId>
                 <artifactId>jmeter-graph-maven-plugin</artifactId>
                 <version>0.1.0</version>
@@ -371,7 +371,7 @@
                         </graph>
                    </graphs>
                 </configuration>
-            </plugin>
+            </plugin> -->
         </plugins>
 		
   </build>
