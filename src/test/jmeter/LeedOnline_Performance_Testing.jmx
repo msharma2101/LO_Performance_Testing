@@ -47,14 +47,9 @@
             <stringProp name="Argument.value">${__P(rampUp, 15)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="project_id" elementType="Argument">
-            <stringProp name="Argument.name">project_id</stringProp>
-            <stringProp name="Argument.value">1000182788</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="csvFilePath" elementType="Argument">
             <stringProp name="Argument.name">csvFilePath</stringProp>
-            <stringProp name="Argument.value">/var/lib/jenkins/workspace/LEEDOnline_Performance_Testing/src/test/jmeter/DataDriven.csv</stringProp>
+            <stringProp name="Argument.value">C:/Users/Megha/Documents/git_automation/LEEDOnline_Performance/src/test/jmeter/DataDriven.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -159,7 +154,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -333,51 +328,6 @@
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import java.io.*;
-import org.apache.commons.io.FileUtils;    //necessary import
-import java.util.ArrayList;
-
-
-File f=new File(&quot;${csvFilePath}&quot;);
-try
-{
-    //To read the value of the specific column
-	List lines = FileUtils.readLines(f); // read CSV file into the array of lines in memory
-	int threadNum = ${__threadNum};
-	log.info(&quot;Thread  &quot;+threadNum);
-	String row2 = lines.get(threadNum);
-	log.info(row2);
-	String[] cells = row2.split(&quot;,&quot;);    //split row 10 into cells using comma as delimiter
-	String projectId = cells[8];    // get value of 4th column, counting is zero-based
-	log.info(&quot;projectId value = &quot; + projectId);    // print the value into jmeter.log file
-	//vars.put(&quot;cell5value&quot;, cell5);    // store the value as ${cell5value} JMeter Variable
-	
-	//Read data from the regular expression
-	String token =  vars.get(&quot;csrf_token&quot;);
-	log.info(&quot;Token is: &quot;+token);
-	
-	
-	FileWriter fw=new FileWriter(f, true);
-	BufferedWriter bw=new BufferedWriter(fw);
-	bw.newLine(); // For next line 
-	bw.write(projectId); // This is adding value to the new line
-	bw.close();
-	fw.close();
-}
-catch(Exception e)
-{
-    log.info(&quot;Cannot parse &quot; + e + &quot; as double&quot;);
-}
-
-
-log.info(&quot;============================================================================== &quot; );
-</stringProp>
-            </BeanShellPostProcessor>
-            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LEED Online login page api" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -436,19 +386,6 @@ log.info(&quot;=================================================================
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Credit card Number" enabled="true">
-            <stringProp name="scriptLanguage">groovy</stringProp>
-            <stringProp name="parameters">CreditCardNumberNew</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
-            <stringProp name="script">import java.io.*;
-log.info(&quot;*************************************************************************************&quot;);
-String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
-CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
-vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
-log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Projects page  " enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -523,7 +460,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Create_Project " enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Create_Project " enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">false</boolProp>
           <stringProp name="TestPlan.comments">Click on create project button.</stringProp>
@@ -2014,7 +1951,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Make Credit card Payment" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Make Credit card Payment" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
@@ -2549,9 +2486,18 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
-              <stringProp name="ConstantTimer.delay">1000</stringProp>
-            </ConstantTimer>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Credit card Number" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters">CreditCardNumberNew</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+              <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+            </JSR223PreProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get the card tokenized ${project_id} " enabled="true">
@@ -2846,6 +2792,56 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Read and write to csv file" enabled="false">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">CreditCardNumberNew</stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">import java.io.*;
+import org.apache.commons.io.FileUtils;    //necessary import
+import java.util.ArrayList;
+
+
+File f=new File(&quot;${csvFilePath}&quot;);
+try
+{
+    //To read the value of the specific column of the csv file
+	List lines = FileUtils.readLines(f); // read CSV file into the array of lines in memory
+	int threadNum = ${__threadNum};
+	log.info(&quot;Thread  &quot;+threadNum);
+	String row2 = lines.get(threadNum);
+	log.info(row2);
+	String[] cells = row2.split(&quot;,&quot;);    //split row 10 into cells using comma as delimiter
+	String CreditCardNumberNew = cells[33];    // get value of 8th column, counting is zero-based
+	log.info(&quot;CreditCardNumberNew value = &quot; + CreditCardNumberNew);    // print the value into jmeter.log file
+	vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+	//vars.put(&quot;cell5value&quot;, cell5);    // store the value as ${cell5value} JMeter Variable
+	
+	//Read data from the regular expression
+	//String token =  vars.get(&quot;csrf_token&quot;);
+	//log.info(&quot;Token is: &quot;+token);
+	
+	// To write in the csv file
+	FileWriter fw=new FileWriter(f, true);
+	BufferedWriter bw=new BufferedWriter(fw);
+	bw.newLine(); // For next line 
+	bw.write(projectId); // This is adding value to the new line
+	bw.close();
+	fw.close();
+}
+catch(Exception e)
+{
+    log.info(&quot;Cannot parse &quot; + e + &quot; as double&quot;);
+}
+
+
+log.info(&quot;============================================================================== &quot; );
+</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer (Used for delaying)" enabled="false">
+          <stringProp name="ConstantTimer.delay">1000</stringProp>
+        </ConstantTimer>
+        <hashTree/>
       </hashTree>
     </hashTree>
     <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
