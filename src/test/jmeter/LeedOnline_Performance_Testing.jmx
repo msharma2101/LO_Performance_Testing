@@ -32,29 +32,9 @@
             <stringProp name="Argument.value">leedonline-api-stg.usgbc.org</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="CardNumber" elementType="Argument">
-            <stringProp name="Argument.name">CardNumber</stringProp>
-            <stringProp name="Argument.value">4111111111111111</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="CVV" elementType="Argument">
-            <stringProp name="Argument.name">CVV</stringProp>
-            <stringProp name="Argument.value">999</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="CardExpiryMonth" elementType="Argument">
-            <stringProp name="Argument.name">CardExpiryMonth</stringProp>
-            <stringProp name="Argument.value">04</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="CardExpiryYear" elementType="Argument">
-            <stringProp name="Argument.name">CardExpiryYear</stringProp>
-            <stringProp name="Argument.value">2021</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="THREAD_COUNT" elementType="Argument">
             <stringProp name="Argument.name">THREAD_COUNT</stringProp>
-            <stringProp name="Argument.value">${__P(threadCount, 3)}</stringProp>
+            <stringProp name="Argument.value">${__P(threadCount, 1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LOOP_COUNT" elementType="Argument">
@@ -64,7 +44,17 @@
           </elementProp>
           <elementProp name="RAMP_UP" elementType="Argument">
             <stringProp name="Argument.name">RAMP_UP</stringProp>
-            <stringProp name="Argument.value">${__P(rampUp, 20)}</stringProp>
+            <stringProp name="Argument.value">${__P(rampUp, 15)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="project_id" elementType="Argument">
+            <stringProp name="Argument.name">project_id</stringProp>
+            <stringProp name="Argument.value">1000182788</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="csvFilePath" elementType="Argument">
+            <stringProp name="Argument.name">csvFilePath</stringProp>
+            <stringProp name="Argument.value">/var/lib/jenkins/workspace/LEEDOnline_Performance_Testing/src/test/jmeter/DataDriven.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -130,7 +120,7 @@
           <boolProp name="recycle">false</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">false</boolProp>
-          <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,ProjectName,ProjectID,RatingSystemApiCode,RatingSystem,Status,AnticipatedType,GrossArea,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,StartDate,EndDate,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency </stringProp>
+          <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,ProjectName,ProjectID,RatingSystemApiCode,RatingSystem,Status,AnticipatedType,GrossArea,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,StartDate,EndDate,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber</stringProp>
         </CSVDataSet>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -169,7 +159,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -206,7 +196,7 @@
           <stringProp name="filename">/var/lib/jenkins/workspace/LEEDOnline_Performance_Testing/Reportfile/Summary_report.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -251,17 +241,17 @@
           <intProp name="Assertion.test_type">8</intProp>
         </ResponseAssertion>
         <hashTree/>
+        <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="false">
+          <stringProp name="DurationAssertion.duration">2000</stringProp>
+          <stringProp name="Assertion.scope">all</stringProp>
+        </DurationAssertion>
+        <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Login" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">false</boolProp>
           <stringProp name="TestPlan.comments">Login to the application and check the list of projects.</stringProp>
         </TransactionController>
         <hashTree>
-          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="false">
-            <stringProp name="DurationAssertion.duration">2000</stringProp>
-            <stringProp name="Assertion.scope">all</stringProp>
-          </DurationAssertion>
-          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LEED Online  " enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -343,44 +333,60 @@
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import java.io.*;
+import org.apache.commons.io.FileUtils;    //necessary import
+import java.util.ArrayList;
+
+
+File f=new File(&quot;${csvFilePath}&quot;);
+try
+{
+    //To read the value of the specific column
+	List lines = FileUtils.readLines(f); // read CSV file into the array of lines in memory
+	int threadNum = ${__threadNum};
+	log.info(&quot;Thread  &quot;+threadNum);
+	String row2 = lines.get(threadNum);
+	log.info(row2);
+	String[] cells = row2.split(&quot;,&quot;);    //split row 10 into cells using comma as delimiter
+	String projectId = cells[8];    // get value of 4th column, counting is zero-based
+	log.info(&quot;projectId value = &quot; + projectId);    // print the value into jmeter.log file
+	//vars.put(&quot;cell5value&quot;, cell5);    // store the value as ${cell5value} JMeter Variable
+	
+	//Read data from the regular expression
+	String token =  vars.get(&quot;csrf_token&quot;);
+	log.info(&quot;Token is: &quot;+token);
+	
+	
+	FileWriter fw=new FileWriter(f, true);
+	BufferedWriter bw=new BufferedWriter(fw);
+	bw.newLine(); // For next line 
+	bw.write(projectId); // This is adding value to the new line
+	bw.close();
+	fw.close();
+}
+catch(Exception e)
+{
+    log.info(&quot;Cannot parse &quot; + e + &quot; as double&quot;);
+}
+
+
+log.info(&quot;============================================================================== &quot; );
+</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LEED Online login page api" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="password" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">password</stringProp>
-                  <stringProp name="Argument.value">${Password}</stringProp>
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">_csrf_token=${csrf_token}&amp;timeDiffFromGmt=-14400&amp;username=${Email}&amp;password=${Password}&amp;agree=1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="timeDiffFromGmt" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">timeDiffFromGmt</stringProp>
-                  <stringProp name="Argument.value">-14400</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="_csrf_token" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">_csrf_token</stringProp>
-                  <stringProp name="Argument.value">${csrf_token}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="agree" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">agree</stringProp>
-                  <stringProp name="Argument.value">1</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="username" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">username</stringProp>
-                  <stringProp name="Argument.value">newserver2@gmail.com</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -430,6 +436,19 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Credit card Number" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters">CreditCardNumberNew</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+            <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Projects page  " enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -484,43 +503,7 @@
               <stringProp name="TestPlan.comments">Recorded time was 21695 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
-            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import java.io.*;
-
-File f=new File(&quot;C:\\Users\\Megha\\Desktop\\Jmeter\\LEEDOnline_Performance\\csv\\DataDriven1.csv&quot;);
-
-Name = vars.get(&quot;Username&quot;);
-
-log.info(&quot;Name is = &quot; +Name );
-
-FileWriter fw=new FileWriter(f);
-
-BufferedWriter bw=new BufferedWriter(fw);
-
-var rc = prev.getResponseCode();
-
-if(rc.equals(&quot;200&quot;)){
-
- //bw.write(&quot;test is passed&quot;);
- 
-}
-
-else{
-	
- //bw.write(&quot;test is failed&quot;);
- 
-}
-
-bw.close();
-
-fw.close();
-</stringProp>
-            </BeanShellPostProcessor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate User name ${Username} on Projects page" enabled="false">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate User name ${Username} on Projects page" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-605278384">${Username}</stringProp>
               </collectionProp>
@@ -539,70 +522,6 @@ fw.close();
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="false">
-            <stringProp name="BeanShellSampler.query">vars.put(&quot;link&quot;, &quot;www.google.com&quot;); 
-var x =vars.get(&quot;link&quot;);
-
-log.info(&quot;value of x is &quot;+  x); 
-
-ctx.getThread().getThreadName(); 
-</stringProp>
-            <stringProp name="BeanShellSampler.filename"></stringProp>
-            <stringProp name="BeanShellSampler.parameters"></stringProp>
-            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
-          </BeanShellSampler>
-          <hashTree/>
-          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="false">
-            <stringProp name="BeanShellSampler.query">import java.io.FileWriter;
-import java.util.Arrays;
-import java.io.Writer;
-import java.util.List;
-
-char SEPARATOR = &apos;,&apos;;
-
-public void writeLine(FileWriter writer, String[] params, char separator) {
-    boolean firstParam = true;
-    StringBuilder stringBuilder = new StringBuilder();
-    String param = &quot;&quot;;
-    for (int i = 0; i &lt; params.length; i++) {
-        
-        param = params[i];
-        log.info(param);
-        
-        if (!firstParam) {
-            stringBuilder.append(separator);
-        }//Add param to line
-        stringBuilder.append(param);
-        firstParam = false;
-    }
-    
-    stringBuilder.append(&quot;\n&quot;);
-    
-    log.info(stringBuilder.toString());
-    writer.append(stringBuilder.toString());
-}
-
-String csvFile = &quot;C:\Users\Megha\Desktop\Jmeter\LEEDOnline_Performance\csv\DataDriven1.csv&quot;;
-String[] params = {
-    $ {
-        Megha
-    },
-    $ {
-        Megha Sharma
-    },
-    $ {
-        Tarun
-    }
-};
-FileWriter fileWriter = new FileWriter(csvFile, true);
-writeLine(fileWriter, params, SEPARATOR);
-fileWriter.flush();
-fileWriter.close();</stringProp>
-            <stringProp name="BeanShellSampler.filename"></stringProp>
-            <stringProp name="BeanShellSampler.parameters"></stringProp>
-            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
-          </BeanShellSampler>
-          <hashTree/>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Create_Project " enabled="false">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -1648,35 +1567,13 @@ fileWriter.close();</stringProp>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Payment page - validate zipcode" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="country" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">country</stringProp>
-                  <stringProp name="Argument.value">${BillerCountry}</stringProp>
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">country=${BillerCountry}&amp;ajaxFlag=true&amp;postalcode=${BillerZipcode}&amp;state=${BillerState}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="ajaxFlag" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">ajaxFlag</stringProp>
-                  <stringProp name="Argument.value">true</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="postalcode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">postalcode</stringProp>
-                  <stringProp name="Argument.value">${BillerZipcode}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="state" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">state</stringProp>
-                  <stringProp name="Argument.value">${BillerState}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -1859,13 +1756,6 @@ fileWriter.close();</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="_" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">_</stringProp>
-                  <stringProp name="Argument.value">1586824093875</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
               </collectionProp>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
@@ -1914,22 +1804,14 @@ fileWriter.close();</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Payment process Id of the payment" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Payment process Id of the payment " enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="ajaxFlag" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">ajaxFlag</stringProp>
-                  <stringProp name="Argument.value">true</stringProp>
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">ajaxFlag=true&amp;promocode=</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="promocode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">promocode</stringProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -1997,36 +1879,14 @@ fileWriter.close();</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Projet registration check payment completion and get the order Id" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Projet registration payment completion and get the order Id " enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="_submit_check" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">_submit_check</stringProp>
-                  <stringProp name="Argument.value">1</stringProp>
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">_submit_check=1&amp;payload[doneVia]=pay-by-check&amp;payload[id]=${payload_id}&amp;payload[mode]=check</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="payload[doneVia]" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">payload[doneVia]</stringProp>
-                  <stringProp name="Argument.value">pay-by-check</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="payload[id]" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">payload[id]</stringProp>
-                  <stringProp name="Argument.value">${payload_id}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="payload[mode]" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">payload[mode]</stringProp>
-                  <stringProp name="Argument.value">check</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -2034,7 +1894,7 @@ fileWriter.close();</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">payment/pay/project/1000181657</stringProp>
+            <stringProp name="HTTPSampler.path">payment/pay/project/${project_id}</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2047,9 +1907,17 @@ fileWriter.close();</stringProp>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
                 <elementProp name="Accept" elementType="Header">
                   <stringProp name="Header.name">Accept</stringProp>
                   <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                  <stringProp name="Header.value">empty</stringProp>
                 </elementProp>
                 <elementProp name="X-Requested-With" elementType="Header">
                   <stringProp name="Header.name">X-Requested-With</stringProp>
@@ -2058,10 +1926,6 @@ fileWriter.close();</stringProp>
                 <elementProp name="X-Leed-Csrf-Token" elementType="Header">
                   <stringProp name="Header.name">X-Leed-Csrf-Token</stringProp>
                   <stringProp name="Header.value">${pay_csrf_token}</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
                 </elementProp>
                 <elementProp name="X-Leed-Request" elementType="Header">
                   <stringProp name="Header.name">X-Leed-Request</stringProp>
@@ -2078,6 +1942,15 @@ fileWriter.close();</stringProp>
               <stringProp name="RegexExtractor.default"></stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate the status of payment done" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1088026059">&quot;status&quot;:&quot;success&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Receipt page" enabled="true">
@@ -2227,35 +2100,13 @@ fileWriter.close();</stringProp>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Payment page - validate zipcode" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="country" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">country</stringProp>
-                  <stringProp name="Argument.value">${BillerCountry}</stringProp>
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">country=${BillerCountry}&amp;ajaxFlag=true&amp;postalcode=${BillerZipcode}&amp;state=${BillerState}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="ajaxFlag" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">ajaxFlag</stringProp>
-                  <stringProp name="Argument.value">true</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="postalcode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">postalcode</stringProp>
-                  <stringProp name="Argument.value">${BillerZipcode}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="state" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">state</stringProp>
-                  <stringProp name="Argument.value">${BillerState}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -2438,13 +2289,6 @@ fileWriter.close();</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="_" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">_</stringProp>
-                  <stringProp name="Argument.value">1586824093875</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
               </collectionProp>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
@@ -2493,22 +2337,14 @@ fileWriter.close();</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Payment process Id of the payment" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Payment process Id of the payment " enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="ajaxFlag" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">ajaxFlag</stringProp>
-                  <stringProp name="Argument.value">true</stringProp>
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">ajaxFlag=true&amp;promocode=</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="promocode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">promocode</stringProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -2718,75 +2554,19 @@ fileWriter.close();</stringProp>
             </ConstantTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get the card tokenized ${project_id}" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get the card tokenized ${project_id} " enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="Paymetric_CreditCardType" elementType="HTTPArgument">
+                <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">4000</stringProp>
+                  <stringProp name="Argument.value">Paymetric_CreditCardType=${CreditCardType}&amp;Paymetric_CreditCardNumber=${CreditCardNumberNew}&amp;Paymetric_Exp_Month=${ExpiryMonth}&amp;Paymetric_Exp_Year=${ExpiryYear}&amp;Paymetric_CVV=${CVV}&amp;Paymetric_Packet=${paymetric_url}&amp;Paymetric_Start_Month=&amp;Paymetric_Start_Year=&amp;Paymetric_IssuerNumber=&#xd;
+</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_CreditCardType</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_CreditCardNumber" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">4111111111111111</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_CreditCardNumber</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_Exp_Month" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">04</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_Exp_Month</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_Exp_Year" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">2021</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_Exp_Year</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_CVV" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">999</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_CVV</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_Packet" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">${paymetric_url}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_Packet</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_Start_Month" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_Start_Month</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_Start_Year" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_Start_Year</stringProp>
-                </elementProp>
-                <elementProp name="Paymetric_IssuerNumber" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Paymetric_IssuerNumber</stringProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">qaapp02.xisecurenet.com</stringProp>
+            <stringProp name="HTTPSampler.domain">cert-xiecomm.paymetric.com</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -2832,7 +2612,7 @@ fileWriter.close();</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Projet registration payment completion and get the order Id" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Projet registration payment completion and get the order Id duplicate" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="_submit_check" elementType="HTTPArgument">
