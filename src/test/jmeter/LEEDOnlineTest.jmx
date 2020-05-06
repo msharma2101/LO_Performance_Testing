@@ -188,7 +188,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\Megha\.jenkins\workspace\LEEDOnlinePerformanceTest\Reportfile\Summary_report.csv</stringProp>
+          <stringProp name="filename">C:\Users\Megha\.jenkins\workspace\LEEDOnlinePerformanceTest\Reportfile\SummaryReport.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="false">
