@@ -241,7 +241,7 @@
                     </source> -->
                   <!-- <source>${project.build.directory}\jmeter\results\LeedOnline_performance_Testing.jtl    LeedOnline_performance_Testing
                   </source>  -->
-                  <source>${project.build.directory}/jmeter/results/LeedOnline_Performance_Testing.jtl 
+                  <source>${project.build.directory}/jmeter/results/LEEDOnlineTest.jtl 
                   </source> 
                           
               <sourceDirFailed>true</sourceDirFailed>

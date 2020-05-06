@@ -1,4 +1,4 @@
-package LO.LO;
+package LEEDOnline.LEEDOnline;
 
 /**
  * Hello world!
