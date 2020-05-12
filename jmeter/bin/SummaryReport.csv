@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1589245766032,1095,LEED Online  ,200,OK,Thread Group  1-1,text,true,,758335,6126,1,1,https://leedonline-stg.usgbc.org/,219,0,150
+1589245767130,385,LEED Online login page api,200,OK,Thread Group  1-1,text,true,,626,631,1,1,https://leedonline-stg.usgbc.org/user/login,385,0,0
+1589245778403,2019,Projects page  ,200,OK,Thread Group  1-1,text,true,,880198,11625,1,1,https://leedonline-stg.usgbc.org/projects,443,0,124
+1589245800674,570,Registration page,200,OK,Thread Group  1-1,text,true,,144351,9607,1,1,https://leedonline-stg.usgbc.org/projects/register,218,0,122
+1589245801249,230,Validate Zip code,200,OK,Thread Group  1-1,text,true,,905,570,1,1,https://leedonline-stg.usgbc.org/projects/validatezipcode,230,0,0
+1589245801483,88,Get Registration page nonces ,200,OK,Thread Group  1-1,text,true,,577,370,1,1,https://leedonline-stg.usgbc.org/leed/getNonce/5,88,0,0
+1589245801575,1113,Sdn status validation api,200,OK,Thread Group  1-1,text,true,,456,665,1,1,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus?hash=true%20,1113,0,141
+1589245871516,1485,https://leedonline-stg.usgbc.org/Projects/register,200,OK,Thread Group  1-1,text,true,,142981,10831,1,1,https://leedonline-stg.usgbc.org/leed/agreement,881,0,126
+1589245873175,917,Agreement Page,200,OK,Thread Group  1-1,text,true,,92681,12756,1,1,https://leedonline-stg.usgbc.org/projects,56,0,0
+1589245874096,6894,Project Registration confirmation and get Project Id,200,OK,Thread Group  1-1,text,true,,739,633,1,1,https://leedonline-stg.usgbc.org/projects/register,6893,0,113
