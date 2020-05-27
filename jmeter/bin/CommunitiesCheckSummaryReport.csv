@@ -1,0 +1,86 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1590512341263,683,LEED Online  ,200,OK,Thread Group  1-1,text,true,,758326,6126,1,1,https://leedonline-stg.usgbc.org/,258,0,186
+1590512341948,312,LEED Online login page api,200,OK,Thread Group  1-1,text,true,,626,631,1,1,https://leedonline-stg.usgbc.org/user/login,312,0,0
+1590512342284,1057,Projects page  ,200,OK,Thread Group  1-1,text,true,,880397,11625,1,1,https://leedonline-stg.usgbc.org/projects,331,0,0
+1590512343400,665,Community Link,200,OK,Thread Group  1-1,text,true,,96641,11872,1,1,https://leedonline-stg.usgbc.org/communities,220,0,123
+1590512344139,210,Community Register Page,200,OK,Thread Group  1-1,text,true,,97510,9436,1,1,https://leedonline-stg.usgbc.org/communities/register,53,0,0
+1590512344350,88,Validate Zip code,200,OK,Thread Group  1-1,text,true,,905,623,1,1,https://leedonline-stg.usgbc.org/projects/validatezipcode,88,0,0
+1590512344439,203,Get Registration page nonces ,200,OK,Thread Group  1-1,text,true,,577,381,1,1,https://leedonline-stg.usgbc.org/leed/getNonce/5,203,0,0
+1590512344643,399,Sdn status validation api ,200,OK,Thread Group  1-1,text,true,,456,629,1,1,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,399,0,186
+1590512345234,744,LEED Online  ,200,OK,Thread Group  1-2,text,true,,758326,6126,2,2,https://leedonline-stg.usgbc.org/,388,0,124
+1590512345127,889,Fill Registration page with all fields,200,OK,Thread Group  1-1,text,true,,142996,10684,2,2,https://leedonline-stg.usgbc.org/leed/agreement,223,0,0
+1590512345980,396,LEED Online login page api,200,OK,Thread Group  1-2,text,true,,626,635,2,2,https://leedonline-stg.usgbc.org/user/login,396,0,0
+1590512346038,1158,Agreement Page,200,OK,Thread Group  1-1,text,true,,92886,12756,2,2,https://leedonline-stg.usgbc.org/projects,202,0,132
+1590512346470,896,Projects page  ,200,OK,Thread Group  1-2,text,true,,880138,11625,2,2,https://leedonline-stg.usgbc.org/projects,512,0,0
+1590512347415,532,Community Link,200,OK,Thread Group  1-2,text,true,,68258,11348,2,2,https://leedonline-stg.usgbc.org/communities,212,0,125
+1590512347989,239,Community Register Page,200,OK,Thread Group  1-2,text,true,,101746,9354,2,2,https://leedonline-stg.usgbc.org/communities/register,54,0,0
+1590512348231,83,Validate Zip code,200,OK,Thread Group  1-2,text,true,,905,623,2,2,https://leedonline-stg.usgbc.org/projects/validatezipcode,83,0,0
+1590512348316,200,Get Registration page nonces ,200,OK,Thread Group  1-2,text,true,,577,381,2,2,https://leedonline-stg.usgbc.org/leed/getNonce/5,200,0,0
+1590512348518,286,Sdn status validation api ,200,OK,Thread Group  1-2,text,true,,456,629,2,2,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,286,0,131
+1590512348900,711,Fill Registration page with all fields,200,OK,Thread Group  1-2,text,true,,142781,10684,3,3,https://leedonline-stg.usgbc.org/leed/agreement,213,0,0
+1590512349244,1097,LEED Online  ,200,OK,Thread Group  1-3,text,true,,758326,6126,3,3,https://leedonline-stg.usgbc.org/,359,0,128
+1590512349645,1116,Agreement Page,200,OK,Thread Group  1-2,text,true,,92626,12756,3,3,https://leedonline-stg.usgbc.org/projects,199,0,138
+1590512350342,460,LEED Online login page api,200,OK,Thread Group  1-3,text,true,,626,635,3,3,https://leedonline-stg.usgbc.org/user/login,460,0,0
+1590512350822,626,Projects page  ,200,OK,Thread Group  1-3,text,true,,880229,11625,3,3,https://leedonline-stg.usgbc.org/projects,309,0,0
+1590512351461,499,Community Link,200,OK,Thread Group  1-3,text,true,,68258,11348,3,3,https://leedonline-stg.usgbc.org/communities,213,0,129
+1590512352026,233,Community Register Page,200,OK,Thread Group  1-3,text,true,,101754,9354,3,3,https://leedonline-stg.usgbc.org/communities/register,51,0,0
+1590512352261,82,Validate Zip code,200,OK,Thread Group  1-3,text,true,,905,623,3,3,https://leedonline-stg.usgbc.org/projects/validatezipcode,82,0,0
+1590512352345,205,Get Registration page nonces ,200,OK,Thread Group  1-3,text,true,,577,381,3,3,https://leedonline-stg.usgbc.org/leed/getNonce/5,205,0,0
+1590512352552,267,Sdn status validation api ,200,OK,Thread Group  1-3,text,true,,456,629,3,3,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,267,0,114
+1590512347199,5644,Project Registration confirmation and get Project Id,200,OK,Thread Group  1-1,text,true,,738,613,3,3,https://leedonline-stg.usgbc.org/communities/register,5643,0,0
+1590512353263,703,LEED Online  ,200,OK,Thread Group  1-4,text,true,,758334,6126,4,4,https://leedonline-stg.usgbc.org/,328,0,121
+1590512352918,1081,Fill Registration page with all fields,200,OK,Thread Group  1-3,text,true,,142773,10684,4,4,https://leedonline-stg.usgbc.org/leed/agreement,226,0,0
+1590512352892,962,Payment page,200,OK,Thread Group  1-1,text,true,,206852,7571,4,4,https://leedonline-stg.usgbc.org/payment/pay/community/1000183290,614,0,121
+1590512354130,136,Payment page - validate zipcode,200,OK,Thread Group  1-1,text,true,,905,646,4,4,https://leedonline-stg.usgbc.org/projects/validatezipcode,136,0,0
+1590512353968,313,LEED Online login page api,200,OK,Thread Group  1-4,text,true,,626,635,4,4,https://leedonline-stg.usgbc.org/user/login,313,0,0
+1590512354268,359,Get project registration payment billing info,200,OK,Thread Group  1-1,text,true,,562,879,4,4,https://leedonline-stg.usgbc.org/payment/saveBillToForOrder?country=US&taxExempt=0&address2=+&city=Morrisville&address1=Calle+de+Alcala+48&refresh=N&billEmail=newserver2%40gmail.com&isTaxId1Valid=N&isPostalCodeValid=Y&billName=new+ser+serverb&postalcodeHash=MjN3S0c1L1hGRDZGMVIxdldZUURhTTl1OVFKcXFDZFJCK3A0ZGx3VmpYVzhIeCtCTWNLTkM3L2IyNHFDeVVndkROem0wZGlMZ2JqN0hNamhEaSs0UzE4Mkh5R3VycU50b3FJR2MwNHVSdlBIbHNxaDlFVnhkb3YrOVlPTUt6WU9zQlNIOHFRNU0xND0kUWFkV0RVS0UwTnM9&indiaSez=0&postalcode=12345&currency=USD&state=NC&postalcodeHashFor=US%23NC%2312345,359,0,0
+1590512354628,643,Community Project - Get Payment process Id (Payload Id) of the payment ,200,OK,Thread Group  1-1,text,true,,1107,655,4,4,https://leedonline-stg.usgbc.org/payment/pay/community/1000183290,643,0,0
+1590512354308,1030,Projects page  ,200,OK,Thread Group  1-4,text,true,,880066,11625,4,4,https://leedonline-stg.usgbc.org/projects,626,0,0
+1590512354065,1852,Agreement Page,200,OK,Thread Group  1-3,text,true,,92718,12756,4,4,https://leedonline-stg.usgbc.org/projects,356,0,123
+1590512355387,852,Community Link,200,OK,Thread Group  1-4,text,true,,68258,11348,4,4,https://leedonline-stg.usgbc.org/communities,465,0,137
+1590512350763,5694,Project Registration confirmation and get Project Id,200,OK,Thread Group  1-2,text,true,,738,613,4,4,https://leedonline-stg.usgbc.org/communities/register,5694,0,0
+1590512356336,168,Community Register Page,200,OK,Thread Group  1-4,text,true,,101738,9354,4,4,https://leedonline-stg.usgbc.org/communities/register,51,0,0
+1590512356506,108,Validate Zip code,200,OK,Thread Group  1-4,text,true,,905,623,4,4,https://leedonline-stg.usgbc.org/projects/validatezipcode,108,0,0
+1590512356615,404,Get Registration page nonces ,200,OK,Thread Group  1-4,text,true,,577,381,4,4,https://leedonline-stg.usgbc.org/leed/getNonce/5,404,0,0
+1590512357021,300,Sdn status validation api ,200,OK,Thread Group  1-4,text,true,,456,629,5,5,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,299,0,132
+1590512356478,1021,Payment page,200,OK,Thread Group  1-2,text,true,,206632,7571,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183292,588,0,131
+1590512357501,302,Payment page - validate zipcode,200,OK,Thread Group  1-2,text,true,,905,646,5,5,https://leedonline-stg.usgbc.org/projects/validatezipcode,302,0,0
+1590512357249,671,LEED Online  ,200,OK,Thread Group  1-5,text,true,,758326,6126,5,5,https://leedonline-stg.usgbc.org/,338,0,169
+1590512357807,370,Get project registration payment billing info,200,OK,Thread Group  1-2,text,true,,562,883,5,5,https://leedonline-stg.usgbc.org/payment/saveBillToForOrder?country=US&taxExempt=0&address2=+&city=Morrisville&address1=Calle+de+Alcala+48&refresh=N&billEmail=automationbdd2%40gmail.com&isTaxId1Valid=N&isPostalCodeValid=Y&billName=Automation+User&postalcodeHash=Wk50OUFjU050L0JLVDdhWGxlN3YyMTlKYXV6dnhWcVdLaERzdGZsaTdwTGp1VDUyd2pRMGJVYzlVcTB3Y0drVTdKMzhzRTlsUGNGc2RMM0p1NlJ4c0w3cW5oN2lLWWNFUGpNcW41U1ZiSkU4TU9KMnYyZnBIOHJ2VUdicGp6bng0WUNnK0tMZ1dKQT0kd0x6Y1FhdHJqRGs9&indiaSez=0&postalcode=12345&currency=USD&state=NC&postalcodeHashFor=US%23NC%2312345,370,0,0
+1590512357922,813,LEED Online login page api,200,OK,Thread Group  1-5,text,true,,626,635,5,5,https://leedonline-stg.usgbc.org/user/login,813,0,0
+1590512358181,743,Community Project - Get Payment process Id (Payload Id) of the payment ,200,OK,Thread Group  1-2,text,true,,1106,655,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183292,743,0,0
+1590512357323,1646,Fill Registration page with all fields,200,OK,Thread Group  1-4,text,true,,142773,10684,5,5,https://leedonline-stg.usgbc.org/leed/agreement,334,0,0
+1590512358789,879,Projects page  ,200,OK,Thread Group  1-5,text,true,,880065,11625,5,5,https://leedonline-stg.usgbc.org/projects,352,0,0
+1590512359035,1159,Agreement Page,200,OK,Thread Group  1-4,text,true,,92554,12756,5,5,https://leedonline-stg.usgbc.org/projects,145,0,0
+1590512359770,686,Community Link,200,OK,Thread Group  1-5,text,true,,68258,11348,5,5,https://leedonline-stg.usgbc.org/communities,233,0,129
+1590512360494,261,Community Register Page,200,OK,Thread Group  1-5,text,true,,101754,9354,5,5,https://leedonline-stg.usgbc.org/communities/register,86,0,0
+1590512360757,79,Validate Zip code,200,OK,Thread Group  1-5,text,true,,905,623,5,5,https://leedonline-stg.usgbc.org/projects/validatezipcode,79,0,0
+1590512360839,196,Get Registration page nonces ,200,OK,Thread Group  1-5,text,true,,577,381,5,5,https://leedonline-stg.usgbc.org/leed/getNonce/5,196,0,0
+1590512361037,300,Sdn status validation api ,200,OK,Thread Group  1-5,text,true,,456,629,5,5,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,299,0,141
+1590512361418,725,Fill Registration page with all fields,200,OK,Thread Group  1-5,text,true,,142787,10684,5,5,https://leedonline-stg.usgbc.org/leed/agreement,242,0,0
+1590512355919,6472,Project Registration confirmation and get Project Id,200,OK,Thread Group  1-3,text,true,,738,613,5,5,https://leedonline-stg.usgbc.org/communities/register,6472,0,0
+1590512362234,1509,Agreement Page,200,OK,Thread Group  1-5,text,true,,92569,12756,5,5,https://leedonline-stg.usgbc.org/projects,174,0,120
+1590512362418,1344,Payment page,200,OK,Thread Group  1-3,text,true,,206640,7571,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183294,762,0,122
+1590512363763,254,Payment page - validate zipcode,200,OK,Thread Group  1-3,text,true,,905,646,5,5,https://leedonline-stg.usgbc.org/projects/validatezipcode,254,0,0
+1590512364018,179,Get project registration payment billing info,200,OK,Thread Group  1-3,text,true,,562,883,5,5,https://leedonline-stg.usgbc.org/payment/saveBillToForOrder?country=US&taxExempt=0&address2=+&city=Morrisville&address1=Calle+de+Alcala+48&refresh=N&billEmail=automationbdd3%40gmail.com&isTaxId1Valid=N&isPostalCodeValid=Y&billName=Automation+User&postalcodeHash=WXZRcm5rcXlJVXovRG56R09pRmRKOWpMY1A2V3pFYjZ6elY5ai9WajlOdEJudTQ1aklPOGxsYlVxYmNMTmxURjhpQ3hnbmFaUjBWdm5kYUtySHM1V25YMTlueDlSZW1nYUFJemQ0NjFEaWUwVzUxZVd2SVVhWGtEUGJuc2VKZG15NWVPa0tqZDNvUT0kb1Vwb2xpRFB6L2s9&indiaSez=0&postalcode=12345&currency=USD&state=NC&postalcodeHashFor=US%23NC%2312345,179,0,0
+1590512364198,507,Community Project - Get Payment process Id (Payload Id) of the payment ,200,OK,Thread Group  1-3,text,true,,1106,655,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183294,507,0,0
+1590512360196,6801,Project Registration confirmation and get Project Id,200,OK,Thread Group  1-4,text,true,,738,613,5,5,https://leedonline-stg.usgbc.org/communities/register,6800,0,132
+1590512367005,1087,Payment page,200,OK,Thread Group  1-4,text,true,,206646,7571,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183296,422,0,115
+1590512368093,80,Payment page - validate zipcode,200,OK,Thread Group  1-4,text,true,,905,646,5,5,https://leedonline-stg.usgbc.org/projects/validatezipcode,80,0,0
+1590512368174,172,Get project registration payment billing info,200,OK,Thread Group  1-4,text,true,,562,883,5,5,https://leedonline-stg.usgbc.org/payment/saveBillToForOrder?country=US&taxExempt=0&address2=+&city=Morrisville&address1=Calle+de+Alcala+48&refresh=N&billEmail=automationbdd4%40gmail.com&isTaxId1Valid=N&isPostalCodeValid=Y&billName=Automation+User&postalcodeHash=dDEvL2pzVFNPQkNxQXNsbFozYWRQdElQRUpZb1h5M2dXbjhTaUczY0g5VjRtUU9WdFVkbS84cW84SENla2pqVTlqUEdDekVkTHFIM1B4dmpCUU1CdTNIcWxWcmJzQndJOU84Z1VaSUVUcVF4cS9YWUxHTFNXMzQwQ05sbXlrRHpCOWczZll3MHY1ST0kQ05UcGVnVVhPaU09&indiaSez=0&postalcode=12345&currency=USD&state=NC&postalcodeHashFor=US%23NC%2312345,172,0,0
+1590512368347,426,Community Project - Get Payment process Id (Payload Id) of the payment ,200,OK,Thread Group  1-4,text,true,,1106,655,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183296,426,0,0
+1590512363744,6969,Project Registration confirmation and get Project Id,200,OK,Thread Group  1-5,text,true,,738,613,5,5,https://leedonline-stg.usgbc.org/communities/register,6968,0,0
+1590512370742,797,Payment page,200,OK,Thread Group  1-5,text,true,,206632,7571,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183298,475,0,166
+1590512371541,74,Payment page - validate zipcode,200,OK,Thread Group  1-5,text,true,,905,646,5,5,https://leedonline-stg.usgbc.org/projects/validatezipcode,74,0,0
+1590512371617,177,Get project registration payment billing info,200,OK,Thread Group  1-5,text,true,,562,883,5,5,https://leedonline-stg.usgbc.org/payment/saveBillToForOrder?country=US&taxExempt=0&address2=+&city=Morrisville&address1=Calle+de+Alcala+48&refresh=N&billEmail=automationbdd5%40gmail.com&isTaxId1Valid=N&isPostalCodeValid=Y&billName=Automation+User&postalcodeHash=cnVyNm03SUlFbmdJSkhBYlJWUTR4VTNXMjBWeDRrY2dzcSswcitRSkpYck85WGRiRzZ2NTZlTk1iMTI4a2VSVlZWZEZtb3p4eU1qWFVDMmhVTHgxUVlmSTJNaDBhRFNXdnFPNmtPVXJPRDJreWhTMnJMVFkxOXZGQTYrOG0rd3pmQWdFYkFUQnpoRT0kWlBkVkE1UlM4SEE9&indiaSez=0&postalcode=12345&currency=USD&state=NC&postalcodeHashFor=US%23NC%2312345,177,0,0
+1590512371795,416,Community Project - Get Payment process Id (Payload Id) of the payment ,200,OK,Thread Group  1-5,text,true,,1106,655,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183298,416,0,0
+1590512355272,19356,Community Project - Projet registration payment completion and get the order Id ,200,OK,Thread Group  1-1,text,true,,800,742,5,5,https://leedonline-stg.usgbc.org/payment/pay/community/1000183290,19355,0,126
+1590512374716,496,Community Project - Receipt page,200,OK,Thread Group  1-1,text,true,,53975,6018,5,5,https://leedonline-stg.usgbc.org/payment/confirm/community/1000183290/11060876,207,0,129
+1590512368774,6635,Community Project - Projet registration payment completion and get the order Id ,200,OK,Thread Group  1-4,text,false,"Test failed: text expected to contain /""status"":""success""/",754,742,4,4,https://leedonline-stg.usgbc.org/payment/pay/community/1000183296,6633,0,0
+1590512375413,0,Community Project - Receipt page,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 71: https://leedonline-stg.usgbc.org/payment/confirm/community/1000183296/${order_id},Thread Group  1-4,text,false,Test failed: text expected to contain /Receipt/,1090,0,4,4,https://leedonline-stg.usgbc.org/payment/confirm/community/1000183296/${order_id},0,0,0
+1590512358928,19207,Community Project - Projet registration payment completion and get the order Id ,200,OK,Thread Group  1-2,text,true,,800,742,3,3,https://leedonline-stg.usgbc.org/payment/pay/community/1000183292,19205,0,125
+1590512378160,494,Community Project - Receipt page,200,OK,Thread Group  1-2,text,true,,53778,6018,3,3,https://leedonline-stg.usgbc.org/payment/confirm/community/1000183292/11060877,207,0,129
+1590512364706,18066,Community Project - Projet registration payment completion and get the order Id ,200,OK,Thread Group  1-3,text,true,,800,742,2,2,https://leedonline-stg.usgbc.org/payment/pay/community/1000183294,18064,0,133
+1590512382804,457,Community Project - Receipt page,200,OK,Thread Group  1-3,text,true,,53784,6018,2,2,https://leedonline-stg.usgbc.org/payment/confirm/community/1000183294/11060878,204,0,127
+1590512372214,15622,Community Project - Projet registration payment completion and get the order Id ,200,OK,Thread Group  1-5,text,true,,800,742,1,1,https://leedonline-stg.usgbc.org/payment/pay/community/1000183298,15620,0,0
+1590512387867,482,Community Project - Receipt page,200,OK,Thread Group  1-5,text,true,,53778,6018,1,1,https://leedonline-stg.usgbc.org/payment/confirm/community/1000183298/11060880,206,0,130

@@ -185,7 +185,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">SummaryReport.csv</stringProp>
+          <stringProp name="filename">TestSummaryReport.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">

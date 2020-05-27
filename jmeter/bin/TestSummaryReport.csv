@@ -1,0 +1,43 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1590606933975,902,LEED Online  ,200,OK,Individual Thread Group  1-1,text,true,,758344,6126,1,1,https://leedonline-stg.usgbc.org/,337,0,261
+1590606934880,441,LEED Online login page api,200,OK,Individual Thread Group  1-1,text,true,,626,636,1,1,https://leedonline-stg.usgbc.org/user/login,441,0,0
+1590606935337,1530,Projects page  ,200,OK,Individual Thread Group  1-1,text,true,,863230,11625,1,1,https://leedonline-stg.usgbc.org/projects,251,0,0
+1590606936958,493,Individual Project - Registration page,200,OK,Individual Thread Group  1-1,text,true,,144169,9607,1,1,https://leedonline-stg.usgbc.org/projects/register,172,0,122
+1590606937454,233,Individual Project - Validate Zip code,200,OK,Individual Thread Group  1-1,text,true,,905,570,1,1,https://leedonline-stg.usgbc.org/projects/validatezipcode,233,0,0
+1590606937689,84,Individual Project - Get Registration page nonces ,200,OK,Individual Thread Group  1-1,text,true,,577,370,1,1,https://leedonline-stg.usgbc.org/leed/getNonce/5,84,0,0
+1590606937776,353,Individual Project - Sdn status validation api,200,OK,Individual Thread Group  1-1,text,true,,456,665,1,1,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus?hash=true%20,353,0,185
+1590606938475,711,Individual Project - Fill Registration page with all fields,200,OK,Individual Thread Group  1-1,text,true,,142780,10856,1,1,https://leedonline-stg.usgbc.org/leed/agreement,227,0,0
+1590606939259,1174,Individual Project - Agreement Page,200,OK,Individual Thread Group  1-1,text,true,,75707,12756,1,1,https://leedonline-stg.usgbc.org/projects,176,0,126
+1590606940435,5564,Individual Project - Project Registration confirmation and get Project Id,200,OK,Individual Thread Group  1-1,text,true,,734,633,1,1,https://leedonline-stg.usgbc.org/projects/register,5564,0,0
+1590606946037,925,City Project - Cities Link,200,OK,Individual Thread Group  1-1,text,true,,68197,11093,1,1,https://leedonline-stg.usgbc.org/cities,252,0,150
+1590606947028,281,City Project - Register Page,200,OK,Individual Thread Group  1-1,text,true,,86672,9700,1,1,https://leedonline-stg.usgbc.org/cities/register,57,0,0
+1590606947311,84,City Project - Validate Zip code,200,OK,Individual Thread Group  1-1,text,true,,905,623,1,1,https://leedonline-stg.usgbc.org/projects/validatezipcode,84,0,0
+1590606947397,173,City Project - Get Registration page nonces ,200,OK,Individual Thread Group  1-1,text,true,,577,381,1,1,https://leedonline-stg.usgbc.org/leed/getNonce/5,173,0,0
+1590606947572,313,City Project - Sdn status validation api ,200,OK,Individual Thread Group  1-1,text,true,,455,629,1,1,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,313,0,149
+1590606947911,906,City Project - Fill Registration page with all fields,200,OK,Individual Thread Group  1-1,text,true,,135235,10851,1,1,https://leedonline-stg.usgbc.org/leed/agreement,221,0,0
+1590606948882,916,City Project - Agreement Page,200,OK,Individual Thread Group  1-1,text,true,,76475,12756,1,1,https://leedonline-stg.usgbc.org/projects,53,0,0
+1590606949801,5337,City Project - Project Registration confirmation and get Project Id,200,OK,Individual Thread Group  1-1,text,true,,728,608,1,1,https://leedonline-stg.usgbc.org/cities/register,5337,0,0
+1590606955196,682,Community Project - Communites Link,200,OK,Individual Thread Group  1-1,text,true,,68288,11098,1,1,https://leedonline-stg.usgbc.org/communities,217,0,129
+1590606955970,222,Community Project - Community Register Page,200,OK,Individual Thread Group  1-1,text,true,,90932,9610,1,1,https://leedonline-stg.usgbc.org/communities/register,50,0,0
+1590606956197,273,Community Project - Validate Zip code,200,OK,Individual Thread Group  1-1,text,true,,905,623,1,1,https://leedonline-stg.usgbc.org/projects/validatezipcode,273,0,0
+1590606956472,151,Community Project - Get Registration page nonces ,200,OK,Individual Thread Group  1-1,text,true,,577,381,1,1,https://leedonline-stg.usgbc.org/leed/getNonce/5,151,0,0
+1590606956625,529,Community Project - Sdn status validation api ,200,OK,Individual Thread Group  1-1,text,true,,456,629,1,1,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,529,0,117
+1590606957223,893,Community Project - Fill Registration page with all fields,200,OK,Individual Thread Group  1-1,text,true,,135263,10847,1,1,https://leedonline-stg.usgbc.org/leed/agreement,338,0,123
+1590606958143,858,Community Project - Agreement Page,200,OK,Individual Thread Group  1-1,text,true,,76475,12756,1,1,https://leedonline-stg.usgbc.org/projects,58,0,0
+1590606959003,5260,Community Project - Project Registration confirmation and get Project Id,200,OK,Individual Thread Group  1-1,text,true,,738,613,1,1,https://leedonline-stg.usgbc.org/communities/register,5260,0,0
+1590606964314,527,Group Project - Registration page,200,OK,Individual Thread Group  1-1,text,true,,129567,9694,1,1,https://leedonline-stg.usgbc.org/projects/register,181,0,123
+1590606964843,217,Group Project - Validate Zip code,200,OK,Individual Thread Group  1-1,text,true,,905,570,1,1,https://leedonline-stg.usgbc.org/projects/validatezipcode,217,0,0
+1590606965062,60,Group Project - Get Registration page nonces ,200,OK,Individual Thread Group  1-1,text,true,,577,370,1,1,https://leedonline-stg.usgbc.org/leed/getNonce/5,60,0,0
+1590606965126,337,Group Project - Sdn status validation api,200,OK,Individual Thread Group  1-1,text,true,,456,665,1,1,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus?hash=true%20,337,0,132
+1590606965757,701,Group Project - Fill Registration page with all fields,200,OK,Individual Thread Group  1-1,text,true,,135245,11008,1,1,https://leedonline-stg.usgbc.org/leed/agreement,226,0,0
+1590606966489,1131,Group Project - Agreement Page,200,OK,Individual Thread Group  1-1,text,true,,76475,12756,1,1,https://leedonline-stg.usgbc.org/projects,173,0,119
+1590606967623,6445,Group Project - Project Registration confirmation and get Project Id,200,OK,Individual Thread Group  1-1,text,true,,739,633,1,1,https://leedonline-stg.usgbc.org/projects/register,6444,0,0
+1590606974166,1030,Homes Project - Homes Link,200,OK,Individual Thread Group  1-1,text,true,,68205,11092,1,1,https://leedonline-stg.usgbc.org/homes,509,0,140
+1590606975225,321,Homes Project - Homes registration page,200,OK,Individual Thread Group  1-1,text,true,,96236,9698,1,1,https://leedonline-stg.usgbc.org/homes/registerProject,72,0,0
+1590606975548,239,Homes Project - Validate Zip code,200,OK,Individual Thread Group  1-1,text,true,,905,623,1,1,https://leedonline-stg.usgbc.org/projects/validatezipcode,239,0,0
+1590606975789,87,Homes Project - Get Registration page nonces ,200,OK,Individual Thread Group  1-1,text,true,,577,381,1,1,https://leedonline-stg.usgbc.org/leed/getNonce/5,87,0,0
+1590606975882,303,Homes Project - Sdn status validation api ,200,OK,Individual Thread Group  1-1,text,true,,456,629,1,1,https://leedonline-api-stg.usgbc.org/v1/json/Validate/sdnStatus,303,0,153
+1590606976286,1180,Homes Project - Fill Registration page with all fields,200,OK,Individual Thread Group  1-1,text,true,,135378,10560,1,1,https://leedonline-stg.usgbc.org/leed/agreement,381,0,133
+1590606977519,958,Homes Project - Agreement Page,200,OK,Individual Thread Group  1-1,text,true,,77246,12756,1,1,https://leedonline-stg.usgbc.org/projects,60,0,0
+1590606978480,4524,Homes Project - Home project registration confirmation,200,OK,Individual Thread Group  1-1,text,true,,751,614,1,1,https://leedonline-stg.usgbc.org/homes/registerProject,4524,0,116
+1590606983022,794,Click on logout button,200,OK,Individual Thread Group  1-1,text,true,,19588,7744,1,1,https://leedonline-stg.usgbc.org/,365,0,128
