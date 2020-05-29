@@ -2221,7 +2221,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="true"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create City Project" enabled="true"/>
             <hashTree>
@@ -3886,7 +3886,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="false"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Community Project" enabled="true"/>
             <hashTree>
@@ -10965,7 +10965,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 <stringProp name="ConstantTimer.delay">0</stringProp>
               </UniformRandomTimer>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate mesage after Logout" enabled="false">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate mesage after Logout" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="1854182230">Log in to start a project</stringProp>
                 </collectionProp>
