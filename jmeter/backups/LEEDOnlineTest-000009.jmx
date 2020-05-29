@@ -217,6 +217,18 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Campus Project CSV Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">CampusProjectDataDriven.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,RatingSystemVersion,RatingSystem1,RatingSystem2,RatingSystem3,Unit,ProjectName,ProjectID,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber</stringProp>
+          </CSVDataSet>
+          <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Log In" enabled="true"/>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LEED Online  " enabled="true">
@@ -422,7 +434,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate text on Projects page" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1643554997">Interpretations</stringProp>
+                  <stringProp name="1692727157">Create new Project</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -431,7 +443,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Individual Projects Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Individual Projects Controller" enabled="false"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -2221,7 +2233,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="false"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create City Project" enabled="true"/>
             <hashTree>
@@ -3886,7 +3898,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="false"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Community Project" enabled="true"/>
             <hashTree>
@@ -5542,7 +5554,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Projects Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Projects Controller" enabled="false"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Group Project CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -7292,7 +7304,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="false"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Homes CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -8216,7 +8228,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 <hashTree/>
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate text on payment page" enabled="true">
                   <collectionProp name="Asserion.test_strings">
-                    <stringProp name="877971942">Payment</stringProp>
+                    <stringProp name="-390793932">Payment type</stringProp>
                   </collectionProp>
                   <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                   <boolProp name="Assertion.assume_success">false</boolProp>
@@ -8971,18 +8983,6 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Campus Mastersite Controller" enabled="true"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Campus Project CSV Data Set Config" enabled="true">
-              <stringProp name="delimiter">,</stringProp>
-              <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="filename">CampusProjectDataDriven.csv</stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,RatingSystemVersion,RatingSystem1,RatingSystem2,RatingSystem3,Unit,ProjectName,ProjectID,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber</stringProp>
-            </CSVDataSet>
-            <hashTree/>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Campus And MasterSite" enabled="true"/>
             <hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Campus Project - Campus Link" enabled="true">
@@ -10171,7 +10171,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 <hashTree/>
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate text on payment page" enabled="true">
                   <collectionProp name="Asserion.test_strings">
-                    <stringProp name="877971942">Payment</stringProp>
+                    <stringProp name="-390793932">Payment type</stringProp>
                   </collectionProp>
                   <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                   <boolProp name="Assertion.assume_success">false</boolProp>
@@ -11198,7 +11198,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate text on Projects page" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1643554997">Interpretations</stringProp>
+                <stringProp name="1692727157">Create new Project</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
