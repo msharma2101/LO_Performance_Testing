@@ -98,19 +98,6 @@
      
                     </fileset>
 
-                    <fileset>
-                        <!-- <directory>/var/lib/jenkins/workspace/TestPerformance/Reportfile</directory> -->
-                        <directory>${project.basedir}\Report_new</directory>
-                        <!-- <directory>/var/lib/jenkins/workspace/ARCPerformance/Report</directory> -->
-                        <includes>
-                            <include>**/*</include>
-                        </includes>
-                        <followSymlinks>false</followSymlinks>
-     
-                    </fileset>
-                    
-                    
-
                 </filesets>
             </configuration>
             </plugin>
