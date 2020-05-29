@@ -217,16 +217,16 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Campus Project CSV Data Set Config" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Homes CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">CampusProjectDataDriven.csv</stringProp>
+            <stringProp name="filename">HomesDataDriven.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <stringProp name="shareMode">shareMode.all</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,RatingSystemVersion,RatingSystem1,RatingSystem2,RatingSystem3,Unit,ProjectName,ProjectID,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber</stringProp>
+            <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,ProjectName,ProjectID,RatingSystem,AnticipatedType,GrossArea,OrgId,OwnerOrg,OwnerRep,OwnerCountry,OwnerEmail,Address1,Address2,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber,HomesProviderID,GreenRater,HomesType,MarketClassification,NumResidentialUnits,ResiConditionedArea,HomeProvider</stringProp>
           </CSVDataSet>
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Log In" enabled="true"/>
@@ -7304,20 +7304,8 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="true"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Homes CSV Data Set Config" enabled="true">
-              <stringProp name="delimiter">,</stringProp>
-              <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="filename">HomesDataDriven.csv</stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,ProjectName,ProjectID,RatingSystem,AnticipatedType,GrossArea,OrgId,OwnerOrg,OwnerRep,OwnerCountry,OwnerEmail,Address1,Address2,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber,HomesProviderID,GreenRater,HomesType,MarketClassification,NumResidentialUnits,ResiConditionedArea,HomeProvider</stringProp>
-            </CSVDataSet>
-            <hashTree/>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Homes Project" enabled="true"/>
             <hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Homes Project - Homes Link" enabled="true">
@@ -8981,8 +8969,20 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Campus Mastersite Controller" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Campus Mastersite Controller" enabled="false"/>
           <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Campus Project CSV Data Set Config" enabled="true">
+              <stringProp name="delimiter">,</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="filename">CampusProjectDataDriven.csv</stringProp>
+              <boolProp name="ignoreFirstLine">true</boolProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,RatingSystemVersion,RatingSystem1,RatingSystem2,RatingSystem3,Unit,ProjectName,ProjectID,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber</stringProp>
+            </CSVDataSet>
+            <hashTree/>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Campus And MasterSite" enabled="true"/>
             <hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Campus Project - Campus Link" enabled="true">
