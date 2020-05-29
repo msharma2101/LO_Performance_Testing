@@ -2221,7 +2221,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="true"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create City Project" enabled="true"/>
             <hashTree>
@@ -3886,7 +3886,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="true"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Community Project" enabled="true"/>
             <hashTree>
@@ -5542,7 +5542,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Projects Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Group Project CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -7292,7 +7292,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Homes CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -8969,7 +8969,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Campus Mastersite Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Campus Mastersite Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Campus Project CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
