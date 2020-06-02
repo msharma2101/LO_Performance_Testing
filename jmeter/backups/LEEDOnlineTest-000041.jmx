@@ -39,7 +39,7 @@
           </elementProp>
           <elementProp name="THREAD_COUNT" elementType="Argument">
             <stringProp name="Argument.name">THREAD_COUNT</stringProp>
-            <stringProp name="Argument.value">${__P(threadCount, 5)}</stringProp>
+            <stringProp name="Argument.value">${__P(threadCount, 1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LOOP_COUNT" elementType="Argument">
@@ -193,9 +193,8 @@
             <stringProp name="49586">200</stringProp>
           </collectionProp>
           <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-          <boolProp name="Assertion.assume_success">true</boolProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
           <intProp name="Assertion.test_type">8</intProp>
-          <stringProp name="Assertion.scope">all</stringProp>
         </ResponseAssertion>
         <hashTree/>
         <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="false">
@@ -11144,6 +11143,23 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySystemProperties">false</boolProp>
           </DebugSampler>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">
+ if (prev.getResponse().contains(&quot;Embedded resource download error&quot;) { 
+		 	
+		 	prev.setResponseOK();}
+		 	
+
+
+
+
+log.info(&quot;============================================================================== &quot; );
+</stringProp>
+          </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>

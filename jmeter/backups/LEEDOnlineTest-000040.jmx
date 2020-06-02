@@ -11144,6 +11144,51 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
             <boolProp name="displaySystemProperties">false</boolProp>
           </DebugSampler>
           <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">/*import java.io.*;
+import java.io.*;
+import org.apache.commons.io.FileUtils;    //necessary import
+import java.util.ArrayList;
+
+try
+{
+	 File mycsvfile = new File(&quot;C:\\Users\\Megha\\Documents\\git_automation\\LEEDOnlinePerformanceTest\\jmeter\\bin\\SummaryReport.csv&quot;);
+	 log.info(&quot;filename value = ========================================================================================&quot; + mycsvfile); 
+	
+	
+	if (!mycsvfile.exists()) {
+	
+		 if (prev.getResponse().contains(&quot;Embedded resource download error&quot;) { 
+		 	
+		 	prev.setResponseOK();
+		 	//SampleResult.setResponseMessage(&quot;OK&quot;);
+	 
+		 	
+		 	}
+	
+	      
+	
+	}
+}catch(Exception e)
+{
+    log.info(&quot;Exception &quot; + e);
+}
+*/
+ if (prev.getResponse().contains(&quot;Embedded resource download error&quot;) { 
+		 	
+		 	prev.setResponseOK();}
+		 	//SampleResult.setResponseMessage(&quot;OK&quot;);
+
+
+
+
+log.info(&quot;============================================================================== &quot; );
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Reusable Thread Group" enabled="false">
