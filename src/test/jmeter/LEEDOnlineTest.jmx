@@ -39,7 +39,7 @@
           </elementProp>
           <elementProp name="THREAD_COUNT" elementType="Argument">
             <stringProp name="Argument.name">THREAD_COUNT</stringProp>
-            <stringProp name="Argument.value">${__P(threadCount, 1)}</stringProp>
+            <stringProp name="Argument.value">${__P(threadCount, 5)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LOOP_COUNT" elementType="Argument">
@@ -11138,6 +11138,12 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               <hashTree/>
             </hashTree>
           </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Reusable Thread Group" enabled="false">
