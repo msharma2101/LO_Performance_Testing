@@ -30,6 +30,7 @@
         <performancetest.responseTimeout>3000</performancetest.responseTimeout>
         <performancetest.threadCount>1</performancetest.threadCount>
         <performancetest.loopCount>1</performancetest.loopCount>
+        <httpsampler.ignore_failed_embedded_resources>true</httpsampler.ignore_failed_embedded_resources>
     </properties>
 
     <dependencies>
