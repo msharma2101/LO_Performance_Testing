@@ -4,7 +4,7 @@
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="LEEDOnlineTest" enabled="true">
       <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.2.3.14. Please contact support@blazemeter.com for further support.</stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
@@ -39,7 +39,7 @@
           </elementProp>
           <elementProp name="THREAD_COUNT" elementType="Argument">
             <stringProp name="Argument.name">THREAD_COUNT</stringProp>
-            <stringProp name="Argument.value">${__P(threadCount, 1)}</stringProp>
+            <stringProp name="Argument.value">${__P(threadCount, 5)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LOOP_COUNT" elementType="Argument">
@@ -139,19 +139,6 @@
           <intProp name="Assertion.test_type">8</intProp>
         </ResponseAssertion>
         <hashTree/>
-        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Read Credit card Number from csv file" enabled="true">
-          <stringProp name="scriptLanguage">groovy</stringProp>
-          <stringProp name="parameters">CreditCardNumberNew</stringProp>
-          <stringProp name="filename"></stringProp>
-          <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
-          <stringProp name="script">import java.io.*;
-log.info(&quot;*************************************************************************************&quot;);
-String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
-CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
-vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
-log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
-        </JSR223PreProcessor>
-        <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
@@ -188,7 +175,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -227,16 +214,16 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Credentials CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">DataDriven.csv</stringProp>
+            <stringProp name="filename">Credentials.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <stringProp name="shareMode">shareMode.all</stringProp>
             <boolProp name="stopThread">false</boolProp>
-            <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,ProjectName,ProjectID,RatingSystemApiCode,Unit,RatingSystem,Status,AnticipatedType,GrossArea,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,StartDate,EndDate,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber,CityProjectName,CType,Population,OwnerPhone,CityRatingSystem,CityOwnerType,CommProjectName,CommOwnerType,CommRatingSystem </stringProp>
+            <stringProp name="variableNames">Email,Password,Username</stringProp>
           </CSVDataSet>
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Log In" enabled="true"/>
@@ -466,6 +453,18 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Individual Projects Controller" enabled="true"/>
           <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Individual CSV Data Set Config" enabled="true">
+              <stringProp name="delimiter">,</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="filename">DataDriven.csv</stringProp>
+              <boolProp name="ignoreFirstLine">true</boolProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="variableNames">Email,Password,Username,ProjectCountry,ProjectCity,ProjectState,ProjectZipcode,ProjectName,ProjectID,RatingSystemApiCode,Unit,RatingSystem,Status,AnticipatedType,GrossArea,OrgId,OwnerOrg,OwnerRep,OwnerType,OwnerCountry,OwnerEmail,Address1,Address2,StartDate,EndDate,CardHolderName,BillerCountry,BillerState,BillerZipcode,Currency,CVV,ExpiryMonth,ExpiryYear,CreditCardType,CreditCardNumber,CityProjectName,CType,Population,OwnerPhone,CityRatingSystem,CityOwnerType,CommProjectName,CommOwnerType,CommRatingSystem </stringProp>
+            </CSVDataSet>
+            <hashTree/>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Individual Project " enabled="true"/>
             <hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Individual Project - Registration page" enabled="true">
@@ -1438,7 +1437,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (11 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (10 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -2120,6 +2119,19 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Read Credit card Number from csv file" enabled="true">
+                  <stringProp name="scriptLanguage">groovy</stringProp>
+                  <stringProp name="parameters">CreditCardNumberNew</stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+                  <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+                </JSR223PreProcessor>
+                <hashTree/>
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate status message" enabled="true">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="-186680128">{&quot;status&quot;:&quot;success&quot;,&quot;message&quot;:&quot;Card tokenized successfully&quot;}</stringProp>
@@ -2237,7 +2249,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (94+ (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (38+ (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -2306,7 +2318,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cities Projects Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="City CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -2733,7 +2745,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="City Project - Fill Registration page with all fields" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="City Project - Fill Registration page with all fields " enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="owner_city" elementType="HTTPArgument">
@@ -3184,7 +3196,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (10 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -3878,6 +3890,19 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                   <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Read Credit card Number from csv file" enabled="true">
+                  <stringProp name="scriptLanguage">groovy</stringProp>
+                  <stringProp name="parameters">CreditCardNumberNew</stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+                  <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+                </JSR223PreProcessor>
+                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="City Project - Projet registration payment completion and get the order Id" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -3982,7 +4007,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (38 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -4051,7 +4076,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Communities Projects Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Community CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -4779,7 +4804,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </UniformRandomTimer>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1+ (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -4920,7 +4945,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (10+ (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -5614,6 +5639,19 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                   <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Read Credit card Number from csv file" enabled="true">
+                  <stringProp name="scriptLanguage">groovy</stringProp>
+                  <stringProp name="parameters">CreditCardNumberNew</stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+                  <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+                </JSR223PreProcessor>
+                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Community Project - Projet registration payment completion and get the order Id" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -5718,7 +5756,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (38 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -5787,7 +5825,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Projects Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Group Project CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -6764,7 +6802,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (10 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -7431,6 +7469,19 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                   <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Read Credit card Number from csv file" enabled="true">
+                  <stringProp name="scriptLanguage">groovy</stringProp>
+                  <stringProp name="parameters">CreditCardNumberNew</stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+                  <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+                </JSR223PreProcessor>
+                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Group Project - Projet registration payment completion and get the order Id" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -7531,7 +7582,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (38 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -7601,7 +7652,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Home Projects Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Homes CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -8400,7 +8451,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Homes Project - Home project registration confirmation" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Homes Project - Home project registration confirmation and get Project Id" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="agreementVersion" elementType="HTTPArgument">
@@ -8479,7 +8530,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (10 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -9173,6 +9224,19 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                   <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Read Credit card Number from csv file" enabled="true">
+                  <stringProp name="scriptLanguage">groovy</stringProp>
+                  <stringProp name="parameters">CreditCardNumberNew</stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+                  <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+                </JSR223PreProcessor>
+                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Homes Project - Projet registration payment completion and get the order Id" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -9277,7 +9341,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (38 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -9346,7 +9410,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Campus Mastersite Controller" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Campus Mastersite Controller" enabled="true"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Campus Project CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">,</stringProp>
@@ -10120,7 +10184,7 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (10 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
@@ -10212,6 +10276,8 @@ log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
@@ -10234,7 +10300,6 @@ public class XlsReader
 	public XSSFRow row   =null;
 	public XSSFCell cell = null;
 	public static String sActionKeyword=null;
-	log.info(&quot;filename value = ========================================================================================&quot; + filename); 
 
 
 	
@@ -10673,7 +10738,6 @@ XlsReader data = new XlsReader( &quot;${pathToFile}&quot; );
                   <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
                     <stringProp name="RandomTimer.range">100</stringProp>
                     <stringProp name="ConstantTimer.delay">0</stringProp>
-                    <stringProp name="TestPlan.comments">Recorded time was 31519 milliseconds</stringProp>
                   </UniformRandomTimer>
                   <hashTree/>
                   <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Validate campus details page" enabled="true">
@@ -10741,7 +10805,6 @@ XlsReader data = new XlsReader( &quot;${pathToFile}&quot; );
                   <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
                     <stringProp name="RandomTimer.range">100</stringProp>
                     <stringProp name="ConstantTimer.delay">0</stringProp>
-                    <stringProp name="TestPlan.comments">Recorded time was 211162 milliseconds</stringProp>
                   </UniformRandomTimer>
                   <hashTree/>
                   <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor - campus page csrf_token" enabled="true">
@@ -10911,7 +10974,6 @@ XlsReader data = new XlsReader( &quot;${pathToFile}&quot; );
                   <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
                     <stringProp name="RandomTimer.range">100</stringProp>
                     <stringProp name="ConstantTimer.delay">0</stringProp>
-                    <stringProp name="TestPlan.comments">Recorded time was 23332 milliseconds</stringProp>
                   </UniformRandomTimer>
                   <hashTree/>
                   <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname=" Regular Expression Extractor - mastersite_id" enabled="true">
@@ -10934,7 +10996,7 @@ XlsReader data = new XlsReader( &quot;${pathToFile}&quot; );
                   </ResponseAssertion>
                   <hashTree/>
                   <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                    <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                    <stringProp name="DurationAssertion.duration">${__groovy(500 * (10 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                   </DurationAssertion>
                   <hashTree/>
                 </hashTree>
@@ -11623,6 +11685,19 @@ XlsReader data = new XlsReader( &quot;${pathToFile}&quot; );
                   <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Read Credit card Number from csv file" enabled="true">
+                  <stringProp name="scriptLanguage">groovy</stringProp>
+                  <stringProp name="parameters">CreditCardNumberNew</stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">ca8f3b7a-36d2-41a4-94a5-9dbb2df4b040</stringProp>
+                  <stringProp name="script">import java.io.*;
+log.info(&quot;*************************************************************************************&quot;);
+String CreditCardNumberNew = &quot;${CreditCardNumber}&quot;;
+CreditCardNumberNew = CreditCardNumberNew.replace(&quot;a&quot;,&quot;&quot;);
+vars.put(&quot;CreditCardNumberNew&quot;, CreditCardNumberNew);
+log.info(&quot;CreditCardNumberNew&quot; + CreditCardNumberNew);</stringProp>
+                </JSR223PreProcessor>
+                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Campus MasterSite - Projet registration payment completion and get the order Id" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -11723,7 +11798,7 @@ XlsReader data = new XlsReader( &quot;${pathToFile}&quot; );
                 </ResponseAssertion>
                 <hashTree/>
                 <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion " enabled="true">
-                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (1 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
+                  <stringProp name="DurationAssertion.duration">${__groovy(500 * (38 + (vars.get(&apos;threshold&apos;) as int)),)}</stringProp>
                 </DurationAssertion>
                 <hashTree/>
               </hashTree>
